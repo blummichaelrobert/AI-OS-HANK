@@ -16,7 +16,7 @@
 
 ---
 
-## ROOT — [IF this is blank THEN initial %sync has not been performed. THEREFORE perform inital %sync and replace this tag and the tags below with the files Google Drive ID. THEN, remove this tag. THEN, rename this file to manifest.md!! (Forgetting this breaks projects config references it cannot be forgotten!)]
+## ROOT — [IF Drive ID's are not present THEN initial %sync has not been performed. THEREFORE perform inital %sync and replace this tag and the tags below with the files Google Drive ID. THEN, remove this tag. THEN, rename this file to manifest.md!! (Forgetting this breaks projects config references it cannot be forgotten!)]
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
