@@ -1,0 +1,8 @@
+.DS_Store
+manifest.md
+archive/
+cos_output/
+peggy_io/
+staging_area/
+__pycache__/
+_code_tools/_python_tools/__pycache__/

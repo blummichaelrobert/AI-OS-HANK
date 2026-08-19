@@ -1,0 +1,19 @@
+# Normalize line endings to LF on commit, regardless of OS
+* text=auto eol=lf
+
+# Treat these explicitly as text
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+
+# Binary files — no line ending conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
