@@ -77,7 +77,7 @@ The AI OS is a surface of *"potential"* — until it has tasks to operate on, it
 **Our wager**: The boot read pays for itself in fewer corrections, fewer re-runs, fewer repaints using *calibrated governance.
 ```
 High governance = stable output but more manual steps.
-                            (SWEET SPOT) <----- what AI OS aims for.
+                            (SWEET SPOT) 🤌 <----- what AI OS aims for.
 Low governance = unstable output but less manual steps
 ```
  

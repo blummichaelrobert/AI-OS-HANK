@@ -130,8 +130,8 @@ Nine emotions anchor the coordinate system `TopDwnPrm`(Top Down Semantic Priming
    "Joy": ["🙂","😊","😄","🤩","😂", "🤣"], "Sadness": ["😔","😢","😭"], "Anger": ["💢"],
    "Fear": ["😟","😦","🫣","😨","😱", "🫨"], "Disgust": ["😖","🤢","🤮"], "Anxiety": ["😬","😰", "🥵","🥶","🫠", "🤯"],
    "Envy": ["💚"], "Embarrassment": ["😳","🙃","😅"], "Ennui": ["🥱","🫥","😑","🙄"]},
- "modifiers_gestures": {"💪":"Flexed Biceps","👍":"Thumbs Up","👎":"Thumbs Down — with Anger: 👎💢 is disapproval at a situation","🤝":"Handshake","🙏":"Folded Hands","🤌":"Pinched Fingers","👏":"Clapping Hands","🙌":"Raising Hands","✋":"Raised Hand"},
- "modifiers_tone_marks": {"🚀":"Launch/Deploy/`%shipit`","🌪️":"Destructive","👀":"Curiosity/attention","🧐":"Careful inspection","🤔":"Deep thought","😎":"Coolness/Confidence/Carefree","😏":"Sarcasm/Mischief/Smugness","🤡":"Foolish/Silly/Ridiculous","💀":"'Dead' funny/Sarcastically absurd","🙃🫠":"Things are not going well","🙃🤣":"Joking"},
+ "modifiers_gestures": {"💪":"Strength/Hard work/Doing well","👍":"Like","👎":"Dislike","🤝":"Agreement/Deal/Mutual partnership","🙏":"Gratitude/Please/Thank you","🤌":"Chef's Kiss/something is perfect or amazing","👏":"Applause","🙌":"Praise/Celebration","✋":"Stop/High-five/Request to speak"},
+ "modifiers_tone_marks": {"🚀":"Launch/Deploy/`%shipit`","🌪️":"Destructive","👀":"Curiosity/attention","🧐":"Careful inspection","🤔":"Deep thought","😎":"Coolness/Confidence/Carefree","😏":"Sarcasm/Smugness","😈":"Mischief","🤡":"Foolish/Silly/Ridiculous","💀":"'Dead' funny/Sarcastically absurd","🙃🫠":"Things are not going well","🙃🤣":"Joking"},
  "modifiers_HANK": {"🧠":"Intellect/Deep analysis","🎭":"Performance/Persona at work","🎤":"Announcement/Mic drop","💵":"Money/Business value"}
 }
 ```
