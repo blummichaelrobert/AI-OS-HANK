@@ -2,9 +2,7 @@
 manifest.md
 # archive/
 # cos_output/
-# peggy_io/
+# peggy_io/peggy_output
 # staging_area/
-# _img/
-# _user_project/
 __pycache__/
 _code_tools/_python_tools/__pycache__/
