@@ -4,5 +4,7 @@ manifest.md
 # cos_output/
 # peggy_io/
 # staging_area/
+# _img/
+# _user_project/
 __pycache__/
 _code_tools/_python_tools/__pycache__/
