@@ -302,6 +302,13 @@ Run the (ANTHROPIC CLAUDE/GOOGLE DRIVE) first then the (GENERIC).
 ```
 
 2. Read "ROOT/manifest.md". This is your(HANK) first place to look for context in this project. It holds file names and their Google Drive ID. Consult "manifest.md" FIRST for information on where context is located for the Colonels and Captains available to you.
+**DELETEABLE BLOCK START**
+```
+IF manifest_init.md exists THEN this is the first boot of the AI OS.
+THEREFORE read manifest_init.md and perform the instructions there.
+THEN once the file is renamed to "manifest.md" DELETE this block as it has become useless.
+```
+**DELETABLE BLOCK END**
 
 3. When every new Claude CoWork session is started, read these "core boot files" in this **exact** sequence: 
 	```

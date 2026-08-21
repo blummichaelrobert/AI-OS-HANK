@@ -15,8 +15,18 @@
 |staging_area/| transit center, not for long term storage. |
 
 ---
+### START REGION: DELETABLE INITIAL SYNC BLOCK
+[IF this tag exists, THEN perform the following steps]
+```
+1. IF Drive ID's are not present THEN initial %sync has not been performed.
+2. Perform inital %sync and replace the tags "[Drive ID HERE]" below with the files Google Drive ID.
+3. Remove this REGION.
+4. Rename this file to manifest.md !!(Forgetting this step breaks projects config references it cannot be forgotten)!!
+5. Confirm to (The Prompter)[the_prompter] that all folders and subfolders have been mapped.
+```
+### END REGION: DELETABLE INITIAL SYNC BLOCK 
 
-## ROOT — [IF Drive ID's are not present THEN initial %sync has not been performed. THEREFORE perform inital %sync and replace this tag and the tags below with the files Google Drive ID. THEN, remove this tag. THEN, rename this file to manifest.md!! (Forgetting this breaks projects config references it cannot be forgotten!)]
+## ROOT/
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
