@@ -9,13 +9,14 @@
 
 | Token | Meaning |
 |---|---|
-| `->` | Directional flow — output of the left feeds input of the right. Universal: pipeline steps, event chains, agent addressing (`HANK -> do X`), prompter instructions (`Michael -> HANK -> Colonel`). |
+| `>>` | Command Intent — represents *will(authority)* moving down the chain, agent addressing (`HANK >> do X`) and standing imperatives. Human Register. |
+| `→` | "Go read this" — pointer to a session reference or a "cos_memory.md" entry. Navigation, Human Register. |
+| `->` | Directional Flow — represents *data* moving through a pipeline, gate notation and the isomorphism event chain. Output of the left feeds input of the right. Machine Register. |
 | `()` | Grouping — membership in a set. No hierarchy, no sequence implied. |
 | `%` | Command prefix — the delegation trigger. Michael issues a `%` command; the CNS carries it out. |
 | `\|` | Field separator (within single-line entries and tables). |
 | `[F]` | Status — Final / Resolved. |
 | `[O]` | Status — Open / Unresolved. |
-| `[S]` | Status — Superseded. |
 | `[R]` | Status — Retained for semantic reinforcement; not prunable by Meridian. |
 | `[C]` | Status — Confirmed via live test (with explicit `%shipit`). |
 
