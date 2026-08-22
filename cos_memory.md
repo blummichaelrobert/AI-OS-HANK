@@ -5,21 +5,20 @@
 ---
 *AI OS Creators | MICHAEL_BLUM & WES_SCHAEFFER(The Sales Whisperer™) |*
 
-# CONFIG -> Search and Replace (this)these:
+# CONFIG -> *Searched and Replaced Properties:*
 The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
 
-# File Location Reference:
-"ROOT/pi.md"
-"ROOT/cos.md"
-"ROOT/manifest.md"
-"ROOT/meridian.md"
-"ROOT/meridian_memory.md" (pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE)
-"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" (SPOKE)
-"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" (SPOKE)
-"ROOT/field_manual.md"
-"ROOT/affirmative_detection.md"
-"ROOT/archive/archive_manifest.md"
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/pi.md" | Boot sequence / project identity. Read first every session. |
+| "ROOT/cos.md" | HANK identity + command reference |
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/meridian.md" | Meridian identity — Inspector General / QA. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/field_manual.md"| Lexicon — verbose definitions behind memory pointers. |
+| "ROOT/affirmative_detection.md" | Affirmative Detection patterns (Frequency Principle) |
 
 # cos_memory
 *AI OS RAM(`%todo` List) and System Log(`%logit`)*

@@ -15,15 +15,17 @@ Batch Size = 5
 
 ---
 
-## File Location Reference:
-"ROOT/theater-ops/crm-ops/crm-ops_manifest.md"
-"ROOT/theater-ops/crm-ops/hubspot_contact_search.md"
-"ROOT/theater-ops/crm-ops/hubspot_contact_update.md"
-"ROOT/theater-ops/crm-ops/hubspot_contact_note_create.md"
-"ROOT/theater-ops/_shared-captain-library/web_search.md"
-"ROOT/theater-ops/_shared-captain-library/web_fetch.md"
-"ROOT/theater-ops/_shared-captain-library/browser_scrape.md"
-"ROOT/theater-ops/captain_reference.md"
+## FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/theater-ops/crm-ops/crm-ops_manifest.md" | SPOKE capability catalog |
+| "ROOT/theater-ops/crm-ops/hubspot_contact_search.md" | Captain spec — batch contact retrieval by ONE property filter via `search_crm_objects` |
+| "ROOT/theater-ops/crm-ops/hubspot_contact_update.md" |  Captain spec — update Hubspot Contact |
+| "ROOT/theater-ops/crm-ops/hubspot_contact_note_create.md" | Captain spec — creates a HubSpot NOTE engagement associated to one contact (free-text context storage) |
+| "ROOT/theater-ops/_shared-captain-library/web_search.md" | Captain spec — CoWork native WebSearch [Anthropic Ecosystem Exclusive] |
+| "ROOT/theater-ops/_shared-captain-library/web_fetch.md" | Captain spec — CoWork native WebFetch [Anthropic Ecosystem Exclusive] |
+| "ROOT/theater-ops/_shared-captain-library/browser_scrape.md" | Captain spec — Claude in Chrome MCP [Anthropic -> Google Exclusive] |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. |
 
 ---
 

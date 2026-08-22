@@ -6,7 +6,7 @@
 
 ❗❗ IF searching for context THEN `grep` plain-text data for lines that match the specific pattern matching prompter's intent. ❗❗
 
-# CONFIG -> Search and Replace (this)these:
+# CONFIG -> *Searched and Replaced Properties:*
 The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
 

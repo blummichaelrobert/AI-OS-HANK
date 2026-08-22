@@ -1,4 +1,4 @@
-# CONFIG → Search and Replace (this)these:
+# CONFIG → Searched and Replaced Properties:
 The Prompter = [the_prompter]
 
 ---

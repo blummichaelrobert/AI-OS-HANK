@@ -1,14 +1,16 @@
-# CONFIG -> Search and Replace (this)these:
+# CONFIG -> *Searched and Replaced Properties:*
 The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
 
 ---
-# File Location Reference:
-"ROOT/cos_memory.md"
-"ROOT/affirmative_detection.md"
-"ROOT/REM.md"
-"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md"
-"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md"
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/cos_memory.md" | HANK memory — TODO list + %logit entries |
+| "ROOT/affirmative_detection.md" | Affirmative Detection patterns (Frequency Principle) |
+| "ROOT/REM.md" | Nightly %REM sweep instructions |
+| "ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" | Shared Captain SPOKE |
+| "ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" | Client Resource Management SPOKE |
 
 ---
 # SYNTAX KEY

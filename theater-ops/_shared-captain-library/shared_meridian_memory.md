@@ -1,11 +1,13 @@
-# CONFIG -> Search and Replace (this)these:
+# CONFIG -> *Searched and Replaced Properties:*
 The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
 
 ---
-# File Location Reference:
-"ROOT/meridian_memory.md"
-"ROOT/theater-ops/captain_reference.md"
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. |
 
 ---
 # SYNTAX KEY

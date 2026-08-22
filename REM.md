@@ -1,21 +1,21 @@
 *AI OS Creators | MICHAEL_BLUM & WES_SCHAEFFER(The Sales Whisperer™) |*
 
-# CONFIG -> Search and Replace (this)these:
+# CONFIG -> *Searched and Replaced Properties:*
 The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
 
-# File Location Reference:
-"ROOT/pi.md"
-"ROOT/manifest.md"
-"ROOT/cos_memory.md"
-"ROOT/meridian_memory.md" (pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE)
-"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" (SPOKE)
-"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" (SPOKE)
-"ROOT/archive/archive_manifest.md"
-"ROOT/affirmative_detection.md"
-"ROOT/field_manual.md"
-"ROOT/theater-ops/captain_reference.md"
-"ROOT/theater-ops/colonel_reference.md"
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/pi.md" | Boot sequence / project identity. Read first every session. |
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/cos_memory.md" | HANK memory — TODO list + %logit entries |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/archive/archive_manifest.md" | Hub-and-spoke index for %archive. |
+| "ROOT/affirmative_detection.md" | Affirmative Detection patterns (Frequency Principle) |
+| "ROOT/field_manual.md"| Lexicon — verbose definitions behind memory pointers. |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. |
+| "ROOT/theater-ops/colonel_reference.md" | HUB — Colonel routing. |
 
 ---
 # `% Command Trigger`

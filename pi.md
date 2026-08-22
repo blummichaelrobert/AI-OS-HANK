@@ -7,19 +7,21 @@
 
 # CONFIG -> Terms to SEARCH/REPLACE UPON INSTALL
 The Prompter = [the_prompter]
+Prompter's Job = [prompter_job]
+Prompter's Mission = [prompter_project_objective]
 Prompter Timezone = [prompter_timezone]
 
 ---
-# File Location Reference:
-"ROOT/field_manual.md"
-"ROOT/cos.md"
-"ROOT/cos_memory.md"
-"ROOT/manifest.md"
-"ROOT/meridian.md"
-"ROOT/meridian_memory.md" (pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE)
-"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" (SPOKE)
-"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" (SPOKE)
-"ROOT/theater-ops/captain_reference.md"
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/cos.md" | HANK identity + command reference |
+| "ROOT/cos_memory.md" | HANK memory — TODO list + %logit entries |
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/meridian.md" | Meridian identity — Inspector General / QA. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Colonel routing |
+| "ROOT/validator.py" |  Tier 1 deterministic validator (Validation Schema checker). |
 
 ## PROMPTER TECH STACK
 *Install-time declaration of the SaaS connectors bridged into this AI OS. Declarative and stable — this table records what is CONNECTED, never what is currently WORKING. Live state is read live, never cached here.*
