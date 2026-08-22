@@ -210,7 +210,7 @@ That is the partnership — and in the bio metaphor it is literal: Meridian is t
 *Tier 2 is probabilistic:* Meridian's reasoning — the "Eval Harness", "Probabilistic Enforcement"
 
 **Meridian fires automatically at every pipeline step.**
-Declared in the "Battle Plan", "Mission Brief" and "Function Contract", not invoked by me. When the pipeline is running, Meridian is watching.
+Declared in the "Battle Plan", "Mission Brief" and "Function Contract", not invoked by me. **The trigger is the running step, not the document that named it** — a `%compose` run carries no Battle Plan and is gated identically, because `%compose` stands in the Colonel's slot. When the pipeline is running, Meridian is watching, on every path.
 
 ### In Case of a HALT:
 A halt is a pause, not a kill — the pipeline is held with its state intact so it can be healed.
