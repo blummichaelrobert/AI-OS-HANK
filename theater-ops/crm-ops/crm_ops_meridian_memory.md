@@ -10,7 +10,7 @@ Prompter Timezone = [prompter_timezone]
 
 ---
 # SYNTAX KEY
-*One symbol, one definition — the shared notation every core file is read through.*
+*This file's subset of the shared notation every core file is read through.*
 
 | Token | Meaning |
 |---|---|

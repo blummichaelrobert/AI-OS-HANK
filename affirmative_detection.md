@@ -2,6 +2,17 @@
 The Prompter = [the_prompter]
 
 ---
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/meridian.md" | Meridian identity — Inspector General / QA. Canonical spec for THE GATE IS THE TICK. |
+| "ROOT/REM.md" | Nightly %REM sweep instructions — where this file is READ and counted. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/validator.py" | Tier 1 deterministic validator (Validation Schema checker) — the gate this file ticks alongside. |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. |
+| "ROOT/theater-ops/colonel_reference.md" | HUB — Colonel routing. |
+
+---
 # AFFIRMATIVE DETECTION
 *Author: Meridian — Universal QA Agent, AI OS*
 *Written at every gate — Tier 1 Validator Gate (Captains) and Tier 2 Meridian Gate (Colonels). READ in full only during the %REM sweep.*

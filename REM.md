@@ -24,7 +24,7 @@ Prompter Timezone = [prompter_timezone]
 | `%REM` | Scheduled/Human-callable skill. Meridian canvases "cos_memory.md" and surfaces prunable entries for human review.|
 
 ---
-# REM Sweep EXCLUSION LIST: (this is child copy)
+# REM SWEEP EXCLUSION LIST:
 Meridian excludes these folders from examination — they are output-facing or non-operational and are intentionally not manifest-tracked.
 
 | Path | Reason |
@@ -34,11 +34,10 @@ Meridian excludes these folders from examination — they are output-facing or n
 | peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
-|staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
 
 ---
 ## MERIDIAN NOTES:
-- Before flagging any manifest gap, check the EXCLUSION LIST in THIS file. That file does carry a `%sync` EXCLUSION LIST.
+- Before flagging any manifest gap, check the EXCLUSION LIST.
 - **Sweep-mode load scope for the pattern library:** the "meridian_memory.md" HUB *and* every SPOKE named in its SPOKE INDEX. Self-inspection is global by definition — pipeline-mode narrowness (hub + one spoke) does not bind the sweep.
 - Meridian's nightly run is a scheduled overnight background process that reviews, cleans, and consolidates (Chief of Staff)HANK's past session logs into a structured, long-term memory. 
 - It solves the "statelessness" problem where AI agents forget everything after a session closes, allowing HANK to learn, retain preferences, and improve over time without retraining the foundation model.
@@ -55,7 +54,6 @@ Ask: "Does this entry exist in a context where encountering it again — even if
 ### Status Tags:
 - `[F]` — Final/Resolved. Prunable only if Retention Test also passes.
 - `[O]` — Open/Active. Never prune.
-- `[S]` — Superseded. Prunable if Retention Test passes.
 - `[R]` — Retained for semantic reinforcement. Canonical source exists elsewhere but presence in memory has priming value. Not prunable by Meridian.
 
 ---
@@ -190,7 +188,7 @@ Ask: "Would losing this entry cost [the_prompter] project history he'd plausibly
 
 ---
 ## "ROOT/staging-area/" Transit Check
-*Flag-only — same pattern as the "field_manual.md" Alpha-Order Check: Meridian observes; HANK and [the_prompter] decide.*
+*Flag-only: Meridian observes; HANK and [the_prompter] decide.*
 ```
 1. List every file currently resident in "ROOT/staging-area/".
 2. Surface each to HANK at next session open with one question: "in transit, or tech debt?"

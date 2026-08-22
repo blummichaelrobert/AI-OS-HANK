@@ -3,6 +3,23 @@
 *HUB. This file carries NO unit rows of any kind. Every Captain — shared or arm-owned — is catalogued in a SPOKE: shared Captains in "theater-ops/_shared-captain-library/shared_manifest.md", arm Captains in that arm's "<arm>_manifest.md". One unit, one catalog.*
 
 ---
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/cos.md" | HANK identity + command reference |
+| "ROOT/meridian.md" | Meridian identity — Inspector General / QA. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/theater-ops/colonel_reference.md" | HUB — Colonel routing. |
+| "ROOT/theater-ops/_shared-captain-library/shared_manifest.md" | SPOKE catalog — shared, domain-agnostic Captains. |
+| "ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" | Shared Captain SPOKE (patterns) |
+| "ROOT/theater-ops/crm-ops/crm_ops_manifest.md" | SPOKE catalog — CRM Ops arm (Captains + Colonels). |
+| "ROOT/theater-ops/_standards/captain_function_contract.md" | Captain spec standard (Tier 1) |
+| "ROOT/archive/archive_manifest.md" | Hub-and-spoke index for %archive — the retrieval precedent cited in Reading Order. |
+| "ROOT/affirmative_detection.md" | Affirmative Detection — the invocation substrate a future promotion rule reads. |
+| "ROOT/validator.py" | Tier 1 deterministic validator (Validation Schema checker). |
+
+---
 ## Placement & Promotion
 - **Placement (structural, now):** dependency test. A Captain defaults to `_shared-captain-library/` (shared, domain-agnostic). It moves into a domain arm ONLY if it depends on that domain's data or context. Placement decides catalog: a shared Captain gets its row in "_shared-captain-library/shared_manifest.md"; an arm Captain gets its row in that arm's "<arm>_manifest.md". Neither carries a row in THIS file — which spoke holds a Captain's row is what declares its placement, by construction, and that is why no spoke needs a `Domain` column.
 - **Promotion (usage, roadmap):** usage-rate-driven elevation is deferred to the Affirmative Detection / telemetry roadmap. `AffDet`(Affirmative Detection) already counts per-Captain invocations — that is the substrate a future promotion rule will read. No threshold is codified until live invocation data exists (evals are hypotheses until live-tested).
@@ -15,7 +32,7 @@
 | Arm | Spoke Catalog | Captains | Substrate |
 |---|---|---|---|
 | Shared Captain Library | "theater-ops/_shared-captain-library/shared_manifest.md" | `youtube_transcript` · `web_search` · `web_fetch` · `browser_scrape` · `rss_reader` | CoWork-native · Claude in Chrome MCP |
-| CRM Ops | "theater-ops/crm-ops/crm-ops_manifest.md" | `hubspot_contact_lookup` · `hubspot_contact_create` · `hubspot_contact_update` · `hubspot_contact_search` · `hubspot_contact_note_create` | HubSpot MCP |
+| CRM Ops | "theater-ops/crm-ops/crm_ops_manifest.md" | `hubspot_contact_lookup` · `hubspot_contact_create` · `hubspot_contact_update` · `hubspot_contact_search` · `hubspot_contact_note_create` | HubSpot MCP |
 
 *The Shared Captain Library is not a domain arm — it is the default placement every Captain starts in. It earns a row here because it is a SPOKE, and every spoke must be reachable from this hub.*
 

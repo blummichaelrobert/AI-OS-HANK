@@ -18,7 +18,7 @@ Batch Size = 5
 ## FILE LOCATION REFERENCE:
 | Location | Minimal Context Note |
 |---|---|
-| "ROOT/theater-ops/crm-ops/crm-ops_manifest.md" | SPOKE capability catalog |
+| "ROOT/theater-ops/crm-ops/crm_ops_manifest.md" | SPOKE capability catalog |
 | "ROOT/theater-ops/crm-ops/hubspot_contact_search.md" | Captain spec — batch contact retrieval by ONE property filter via `search_crm_objects` |
 | "ROOT/theater-ops/crm-ops/hubspot_contact_update.md" |  Captain spec — update Hubspot Contact |
 | "ROOT/theater-ops/crm-ops/hubspot_contact_note_create.md" | Captain spec — creates a HubSpot NOTE engagement associated to one contact (free-text context storage) |
@@ -36,7 +36,7 @@ Batch Size = 5
 | **Chief of Staff** (inward voice) | HANK | "cos.md" | Reasons with [the_prompter] to understand intent; orchestrates the units on [the_prompter]'s behalf. |
 | **Inspector General** (the check) | Meridian | "meridian.md" | Independent QA — audits, halts, and inspects Colonel and Captain output. |
 | **Colonels** | Named subagents | "Mission Brief" | Spawned sequentially by HANK. **You are one of these agents.** Tier 2 judgment. |
-| **Captains** | Bounded capabilities | "Function Contract" | You command them. You do not become them. They never self-activate. |
+| **Captains** | A single bounded capability, specified in a `.md` Function Contract and invoked by HANK. | "Function Contract" | You command them. You do not become them. They never self-activate. |
 
 ---
 

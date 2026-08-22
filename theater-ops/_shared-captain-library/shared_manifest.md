@@ -4,6 +4,20 @@
 *Not a domain arm — this is the DEFAULT placement every Captain starts in. It holds Captains only; a Colonel is domain-bound by definition and can never live here.*
 
 ---
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. This file is its SPOKE. |
+| "ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" | Pattern SPOKE for this folder — loaded whenever a unit here is evaluated. |
+| "ROOT/theater-ops/_standards/captain_function_contract.md" | Captain spec standard (Tier 1) — every unit below is authored against it. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/validator.py" | Tier 1 deterministic validator (Validation Schema checker). |
+| "ROOT/affirmative_detection.md" | Affirmative Detection — where each unit below ticks at its gate. |
+
+**Unit specs catalogued in this file:** `youtube_transcript.md` · `web_search.md` · `web_fetch.md` · `browser_scrape.md` · `rss_reader.md` — all resident in this folder, "ROOT/theater-ops/_shared-captain-library/".
+
+---
 ## Scope
 - **In scope:** domain-agnostic capability — retrieval and extraction that depends on no single domain's data or context (web search, fetch, rendered-page scrape, RSS, transcript).
 - **Out of scope:** any Captain that depends on a specific domain's data — those move to that domain's arm per the Placement test in "captain_reference.md". Colonels, always and without exception.

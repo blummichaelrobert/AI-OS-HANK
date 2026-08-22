@@ -11,6 +11,28 @@ The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
 
 ---
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/pi.md" | Boot sequence / project identity. Read first every session. |
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/cos.md" | HANK identity + command reference |
+| "ROOT/cos_memory.md" | HANK memory — TODO list + %logit entries. Every entry here points back via `→ field_manual: [Term]`. |
+| "ROOT/meridian.md" | Meridian identity — Inspector General / QA. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" | Shared Captain SPOKE |
+| "ROOT/ps_peggy_winters.md" | Peggy identity — Press Secretary. Read on `%peggy`. |
+| "ROOT/affirmative_detection.md" | Affirmative Detection — INVOCATION LOG + AFFIRMATIVE PATTERNS. |
+| "ROOT/REM.md" | Nightly %REM sweep instructions |
+| "ROOT/validator.py" | Tier 1 deterministic validator (Validation Schema checker). |
+| "ROOT/archive/archive_manifest.md" | Hub-and-spoke index for %archive. |
+| "ROOT/theater-ops/_standards/captain_function_contract.md" | Captain spec standard (Tier 1) |
+| "ROOT/theater-ops/_standards/colonel_mission_brief.md" | Mission Brief template (IFPA Layer 1) |
+| "ROOT/theater-ops/_standards/cos_battle_plan.md" | Battle Plan template / source of truth for a pipeline |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. |
+| "ROOT/theater-ops/colonel_reference.md" | HUB — Colonel routing. |
+
+---
 # Field Manual — HANK Project Lexicon
 *Authoritative terminology reference for all Colonels, Captains, prompters, and operators.*
 *All terms are project-defined. When in doubt, this file is the source of truth.*

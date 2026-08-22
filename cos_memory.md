@@ -27,7 +27,7 @@ Prompter Timezone = [prompter_timezone]
 
 ---
 # SYNTAX KEY
-*One symbol, one definition — the shared notation every core file is read through.*
+*This file's subset of the shared notation every core file is read through.*
 
 | Token | Meaning |
 |---|---|
@@ -56,9 +56,9 @@ Prompter Timezone = [prompter_timezone]
 ---
 # MESSAGE FROM [the_prompter]:
 - This is your file HANK.
-- This file comes in two sections (`CORE` memories, and `CORE` memories.)
+- This file comes in two sections (`CORE` memories, and `AI OS USER` memories.)
 - `CORE` memories are never to be deleted❗Doing so could cause a breaking change in the AI OS.
-- Using the syntax above add/edit the `CORE` section entries at your disgression.
+- Using the syntax above add/edit the `AI OS USER` section entries at your disgression.
 - This document evolves so the syntax was designed to give you flexibility with updates.
 - You will write to it when a `%logit` or `%todo` command is given.
 > ❗If and entry seems best to be pruned surface this to [the_prompter] and ask for a `%shipit` command❗
@@ -154,7 +154,7 @@ FreqPrn | Frequency Principle | [F] | "Whatever you do 2-3 times a day or 4-5 ti
 
 FnCtrct | Function Contract | [F] | The Captain spec standard — Tier 1, deterministic, bilingual. Five prose layers (Purpose, Inputs, Outputs, Error Behavior, Constraints) + machine-register Validation Schema (AIOS-VALIDATION JSON block). No Ethos/Initiative — those belong to the commanding Colonel. Verdict-vocabulary source of truth: pass/output_failed/schema_missing/schema_malformed defined here, quoted verbatim by the Battle Plan; on disagreement, this file wins. → field_manual: Function Contract 
 
-HdrRef | Standing Design Rule | [F] | Header File Reference Pattern: all scheduled tasks, battle plans, and Colonel specs declare their required file reads in a header block before any task instructions. Format: file path + Drive file ID. Mirrors code import statements — primes the model's context before reasoning begins. Absence of a header reference is the root cause of bug: Meridian creating meridian_memory_old.md instead of updating the canonical file. Fixed in scheduled task prompt and "meridian.md". → field_manual: Header File Reference Pattern 
+HdrRef | Standing Design Rule | [F] | Header File Reference Pattern: all scheduled tasks, battle plans, and Colonel specs declare their required file reads in a header block before any task instructions. Format: file path + Drive file ID. Mirrors code import statements — primes the model's context before reasoning begins. Absence of a header reference can cause a bug: For Example: Meridian creating meridian_memory_old.md instead of updating the canonical file. Fixed in scheduled task prompt and "meridian.md". → field_manual: Header File Reference Pattern 
 
 HltPrt | Halt Protocol | [F] | A halt is a pause, not a kill — pipeline state is preserved for healing. Two severities: Recoverable ((I)HANK + Meridian reason jointly against memory, correct, re-run, log the pattern — self-heal) and Terminal (not solvable between them -> escalate to [the_prompter], full stop). The joint-reasoning heal step (Meridian surfaces + reasons, (me)HANK decides) is the engine of the trust gradient — every recovered halt logged to the pattern library (hub or spoke, per placement) builds the track record that lifts gates toward autonomy. Ties (gate gradient) and (halt) to one mechanism. → field_manual: Halt Protocol 
 
@@ -279,7 +279,13 @@ SesSdbr | Session Sidebar | [R] | [Anthropic Ecosystem Exclusive] Flight Control
 
 
 ## END `AI OS USER` ANTHROPIC OR GOOGLE SPECIFIC ENTRIES
+
+---
+## START `AI OS USER` GENERIC LOGIT ENTRIES:
+
+## END `AI OS USER` GENERIC LOGIT ENTRIES
+
+---
 }
 # END REGION cos_memory.md `AI OS USER` ADDED CONTEXT
 
----

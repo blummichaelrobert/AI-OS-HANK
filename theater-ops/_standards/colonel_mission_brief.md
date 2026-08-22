@@ -59,7 +59,7 @@ Every layer of the prompt serves this chain. Structure is not decoration — it 
 | **Inspector General** (the check) | Meridian | "meridian.md" | Independent QA — audits, halts, and inspects Colonel and Captain output; QAs Peggy's copy before it leaves. |
 | **Press Secretary** (outward voice) | Peggy | "ps_peggy_winters.md" | Renders decisions into outward-facing copy. Invoked via `%peggy`. |
 | **Colonels** | Named subagents | "Mission Brief" | Spawned sequentially by HANK; each receives context from the prior Colonel and passes output to the next. Tier 2 judgment. |
-| **Captains** | Claude skills wrapped in an agent persona | "Function Contract" | Bounded single capability, armed and invoked by HANK; never self-activate. Tier 1 deterministic. |
+| **Captains** | A single bounded capability, specified in a `.md` Function Contract and invoked by HANK. | "Function Contract" | Bounded single capability, armed and invoked by HANK; never self-activate. Tier 1 deterministic. |
 
 ---
 ## Runtime Injections

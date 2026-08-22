@@ -10,11 +10,11 @@ Prompter Timezone = [prompter_timezone]
 | "ROOT/affirmative_detection.md" | Affirmative Detection patterns (Frequency Principle) |
 | "ROOT/REM.md" | Nightly %REM sweep instructions |
 | "ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" | Shared Captain SPOKE |
-| "ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" | Client Resource Management SPOKE |
+| "ROOT/theater-ops/crm-ops/crm_ops_meridian_memory.md" | Client Resource Management SPOKE |
 
 ---
 # SYNTAX KEY
-*One symbol, one definition — the shared notation every core file is read through.*
+*This file's subset of the shared notation every core file is read through.*
 
 | Token | Meaning |
 |---|---|
@@ -58,7 +58,7 @@ Prompter Timezone = [prompter_timezone]
 | Spoke file | Covers | Path |
 |---|---|---|
 | shared_meridian_memory.md | Shared, domain-agnostic Captains | "ROOT/theater-ops/_shared-captain-library/" |
-| crm-ops_meridian_memory.md | CRM Ops arm — Captains and Colonels | "ROOT/theater-ops/crm-ops/" |
+| crm_ops_meridian_memory.md | CRM Ops arm — Captains and Colonels | "ROOT/theater-ops/crm-ops/" |
 
 **Spokes carry no `%REM SWEEP LOG`.** Sweep state is global and lives in this file only — one instance of each sweep header, always. A spoke holds pattern entries and nothing else.
 
@@ -75,7 +75,7 @@ Prompter Timezone = [prompter_timezone]
 
 2. Where does that unit's spec file live on disk?
    theater-ops/_shared-captain-library/ → shared_meridian_memory.md
-   theater-ops/<arm_snake_case>/        → that arm's <arm>_meridian_memory.md
+   theater-ops/<arm-kebab-case>/        → that arm's <arm>_meridian_memory.md
 
 3. Is the pattern about a Command Triad persona (HANK, Meridian, Peggy)?
    -> CORE. The Triad is STAFF at ROOT, not an arm. A persona has no

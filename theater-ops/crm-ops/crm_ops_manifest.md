@@ -3,6 +3,23 @@
 *Arm: CRM Ops — customer-relationship data as a domain of work. HubSpot is the current substrate, not the arm's identity (DIP).*
 
 ---
+# FILE LOCATION REFERENCE:
+| Location | Minimal Context Note |
+|---|---|
+| "ROOT/manifest.md" | Look up index for entire project |
+| "ROOT/theater-ops/captain_reference.md" | HUB — Captain routing and placement law. This file is its SPOKE. |
+| "ROOT/theater-ops/colonel_reference.md" | HUB — Colonel routing. This file is its SPOKE. |
+| "ROOT/theater-ops/crm-ops/crm_ops_meridian_memory.md" | Pattern SPOKE for this arm — loaded whenever a unit here is evaluated. |
+| "ROOT/theater-ops/_shared-captain-library/shared_manifest.md" | SPOKE catalog for the shared Captains this arm depends on. |
+| "ROOT/theater-ops/_standards/captain_function_contract.md" | Captain spec standard (Tier 1) |
+| "ROOT/theater-ops/_standards/colonel_mission_brief.md" | Mission Brief template (IFPA Layer 1) — the Colonel spec standard. |
+| "ROOT/meridian_memory.md" | pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE |
+| "ROOT/validator.py" | Tier 1 deterministic validator (Validation Schema checker). |
+| "ROOT/affirmative_detection.md" | Affirmative Detection — where each unit below ticks at its gate. |
+
+**Unit specs catalogued in this file:** `enrich_hubspot_contact.md` (Colonel) · `hubspot_contact_lookup.md` · `hubspot_contact_create.md` · `hubspot_contact_update.md` · `hubspot_contact_search.md` · `hubspot_contact_note_create.md` — all resident in this folder, "ROOT/theater-ops/crm-ops/".
+
+---
 
 ## Arm Scope
 - **In scope:** retrieval, creation, update, search, and annotation of CRM contact records; judgment roles that reason over them.
@@ -27,7 +44,7 @@
 
 | Colonel | Mission (standing charge) | Output | Status |
 |---|---|---|---|
-| `enrich_hubspot_contact` | Pull a batch of never-attempted HubSpot contacts, scour the open web for the priority four (`company`, `jobtitle`, `hs_linkedin_url`, `website`), write only source-confirmed values, and close every contact with a terminal `ai_os_enrichment_status` so no contact is ever researched twice | Enrichment report — per-contact terminal verdict + per-field accounting with `source_url` on every written value | [O] at v1.3 — two live runs. Run 2 passed all six Tier 1 gates with zero deltas and still wrote three false values (rank-4 aggregator outranked the contact's own email domain); Meridian retracted her Tier 2 pass. `[C]` denied — structural cleanliness is not evidence of truth. v1.3 adds a mandatory ranked Source Hierarchy; awaiting a run whose values survive [the_prompter]'s inspection |
+| `enrich_hubspot_contact` | Pull a batch of never-attempted HubSpot contacts, scour the open web for the priority four (`company`, `jobtitle`, `hs_linkedin_url`, `website`), write only source-confirmed values, and close every contact with a terminal `ai_os_enrichment_status` so no contact is ever researched twice | Enrichment report — per-contact terminal verdict + per-field accounting with `source_url` on every written value | [O] at v1.3 — two live runs. Run 2 passed all six Tier 1 gates with zero deltas and still wrote three false values (rank-4 aggregator outranked the contact's own email domain); Meridian retracted Tier 2 pass. `[C]` denied — structural cleanliness is not evidence of truth. v1.3 adds a mandatory ranked Source Hierarchy; awaiting a run whose values survive [the_prompter]'s inspection |
 
 ---
 
