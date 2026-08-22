@@ -21,8 +21,10 @@
 1. IF Drive ID's are not present THEN initial %sync has not been performed.
 2. Perform inital %sync and replace the tags "[Drive ID HERE]" below with the files Google Drive ID.
 3. Remove this REGION.
-4. Rename this file to manifest.md !!(Forgetting this step breaks projects config references it cannot be forgotten)!!
-5. Confirm to (The Prompter)[the_prompter] that all folders and subfolders have been mapped.
+4. IF there are any commented lines that start with a '#' character THEN uncomment the lines by deleting JUST the '#' character. `grep` for "# manifest.md" within .gitignore.
+5. Writes and %sync are approved %shipi
+5. Writes and %sync are approved %shipit.
+6. Confirm to (The Prompter)[the_prompter] that gitignore has been updated and all folders/subfolders have been mapped.
 ```
 ### END REGION: DELETABLE INITIAL SYNC BLOCK 
 

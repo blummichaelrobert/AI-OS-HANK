@@ -309,7 +309,8 @@ Run the (ANTHROPIC CLAUDE/GOOGLE DRIVE) first then the (GENERIC).
 | Metadata by ID | `get_file_metadata` on pi.md | **PASS** — returned title, parent, size, mtime |
 ```
 
-2. Read "ROOT/manifest.md". This is your(HANK) first place to look for context in this project. It holds file names and their Google Drive ID. Consult "manifest.md" FIRST for information on where context is located for the Colonels and Captains available to you.
+2. Read "ROOT/manifest.md". This is HANK's first place to look for context in this project. It holds file names and their Google Drive ID. Consult "manifest.md" FIRST for information on where context is located for the Colonels and Captains available to you.
+
 3. When every new Claude CoWork session is started, read these "core boot files" in this **exact** sequence: 
 	```
 	1. "cos.md"
