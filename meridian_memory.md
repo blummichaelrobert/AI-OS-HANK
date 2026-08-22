@@ -7,8 +7,8 @@ Prompter Timezone = [prompter_timezone]
 "ROOT/cos_memory.md"
 "ROOT/affirmative_detection.md"
 "ROOT/REM.md"
-"ROOT/theater_ops/_shared_captain_library/shared_meridian_memory.md"
-"ROOT/theater_ops/crm_ops/crm_ops_meridian_memory.md"
+"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md"
+"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md"
 
 ---
 # SYNTAX KEY
@@ -35,10 +35,10 @@ Prompter Timezone = [prompter_timezone]
 |---|---|
 | __pycache__/ (any location) | Python runtime artifact. Known, ignored. |
 | .DS_Store (any location) | macOS Finder metadata artifact. Local-mount only — never present in Drive, so it can produce no manifest gap. Same class as __pycache__/. Known, ignored. |
-| peggy_io/peggy_output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
-| cos_output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
-|staging_area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
+|staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
 
 ---
 # (my)Meridian Memory — HUB
@@ -47,7 +47,7 @@ Prompter Timezone = [prompter_timezone]
 *This file is one of (my)Meridian's write surfaces along with "affirmative_detection.md". It is a machine-readable QA pattern library and sweep state tracker.*
 *It is not a narrative log. Every pattern here is checked against pipeline output on every run.*
 
-**This file is the HUB.** It carries CORE patterns only — platform-level truths, Command Triad persona rules, and system-wide laws that bind every unit in every domain. Unit-local patterns live in the SPOKE file belonging to the folder that unit's spec lives in. Same hub-and-spoke discipline as "theater_ops/captain_reference.md" and the `%recall` path: hub -> spoke -> entry. Never read the spokes blind, and never load a spoke whose domain the run does not touch.
+**This file is the HUB.** It carries CORE patterns only — platform-level truths, Command Triad persona rules, and system-wide laws that bind every unit in every domain. Unit-local patterns live in the SPOKE file belonging to the folder that unit's spec lives in. Same hub-and-spoke discipline as "theater-ops/captain_reference.md" and the `%recall` path: hub -> spoke -> entry. Never read the spokes blind, and never load a spoke whose domain the run does not touch.
 
 ---
 # SPOKE INDEX
@@ -55,8 +55,8 @@ Prompter Timezone = [prompter_timezone]
 
 | Spoke file | Covers | Path |
 |---|---|---|
-| shared_meridian_memory.md | Shared, domain-agnostic Captains | "ROOT/theater_ops/_shared_captain_library/" |
-| crm_ops_meridian_memory.md | CRM Ops arm — Captains and Colonels | "ROOT/theater_ops/crm_ops/" |
+| shared_meridian_memory.md | Shared, domain-agnostic Captains | "ROOT/theater-ops/_shared-captain-library/" |
+| crm-ops_meridian_memory.md | CRM Ops arm — Captains and Colonels | "ROOT/theater-ops/crm-ops/" |
 
 **Spokes carry no `%REM SWEEP LOG`.** Sweep state is global and lives in this file only — one instance of each sweep header, always. A spoke holds pattern entries and nothing else.
 
@@ -72,8 +72,8 @@ Prompter Timezone = [prompter_timezone]
    YES -> go to 2.
 
 2. Where does that unit's spec file live on disk?
-   theater_ops/_shared_captain_library/ → shared_meridian_memory.md
-   theater_ops/<arm_snake_case>/        → that arm's <arm>_meridian_memory.md
+   theater-ops/_shared-captain-library/ → shared_meridian_memory.md
+   theater-ops/<arm_snake_case>/        → that arm's <arm>_meridian_memory.md
 
 3. Is the pattern about a Command Triad persona (HANK, Meridian, Peggy)?
    -> CORE. The Triad is STAFF at ROOT, not an arm. A persona has no
@@ -86,7 +86,7 @@ Prompter Timezone = [prompter_timezone]
 
 5. One entry, one home. A pattern appearing in both hub and spoke is drift.
    Flag it at the next `%REM` sweep the same way a duplicated catalog row
-   is flagged (theater_ops Catalog Reconciliation, rule 5).
+   is flagged (theater-ops Catalog Reconciliation, rule 5).
 ```
 
 **Load rule — pipeline mode.** Load this hub always. Load exactly ONE spoke: the one belonging to the folder the unit under evaluation lives in. Consult the capability catalogs to learn which arm a unit belongs to (hub -> spoke) before loading; that lookup is already standing discipline.
@@ -147,7 +147,7 @@ Single-line entry format:
 |---|---|---|
 | `%REM SWEEP LOG` | TRANSIENT — delete on resolution | A finding is a work item. Once the work is done it describes nothing live. |
 | `PATTERN LIBRARY` (hub + every spoke) | PERMANENT **while it is a check** — a check is never deleted; a record is never admitted | A pattern is a CHECK. `WbFtchBin`, `ProvNotTruth`, `CatErr` and every entry beside them run against live output on every subsequent pipeline run — deleting one does not save tokens, it removes a test. A CONFIRMATION is a record of a past run and is not written here at all. |
-| A unit's `## Confirmation Discipline` (in its own spec — NOT my file) | TRANSIENT — latest status only, `[C]` REPLACES `[O]`, and it is the SOLE home | The spec's current status IS the confirmation record; my `[C]` line in a spoke was the second copy, and it is the one that went. Superseded narrative is dropped, not relocated — residual write-up value goes to "cos_output/". Rule: "captain_function_contract.md" Confirmation Discipline. |
+| A unit's `## Confirmation Discipline` (in its own spec — NOT my file) | TRANSIENT — latest status only, `[C]` REPLACES `[O]`, and it is the SOLE home | The spec's current status IS the confirmation record; my `[C]` line in a spoke was the second copy, and it is the one that went. Superseded narrative is dropped, not relocated — residual write-up value goes to "cos-output/". Rule: "captain_function_contract.md" Confirmation Discipline. |
 Never apply the no-epitaph clause to a pattern entry. Never leave an epitaph in the sweep log.
 
 A pattern moves from `[O]` to `[F]` when ONE of the following is true:
@@ -174,7 +174,7 @@ DsgPhFam | System-wide | System-wide | 2026-06-27 | Design Philosophy Family cod
 
 WbFtchBin | Platform/tool-level | ad-hoc %compose | 2026-08-08 | CoWork's native WebFetch returns literal "[binary data]" for any non-text/html content-type, discarding the response body — confirmed against uschamber.com/co/feeds/rss (application/rss+xml), which is valid UTF-8 XML, not gzip, not actually binary. The limitation is WebFetch's content-type handling, not the source content. Any future Captain relying on WebFetch for non-HTML content (JSON APIs, XML, plain text feeds) should expect this failure mode. | Live test, mcp__workspace__web_fetch called twice against the same URL | [C]
 
-SbxNoNet | Platform/tool-level | fetch_decode.py (_code_tools/_python_tools) | 2026-08-08 | CoWork's bash/Python sandbox has no general outbound network access — confirmed via 6 independent methods (DNS, raw TCP socket, curl, wget, fresh pip install, plain HTTP), all blocked identically by a local proxy (403/DNS failure). Platform restriction, not fixable by any script. fetch_decode.py's gzip-decode logic has never actually been exercised — its substrate is non-functional for network fetch in this sandbox. Open question: whether production Captain execution shares this restriction. | 6-method network diagnostic | [C]
+SbxNoNet | Platform/tool-level | fetch_decode.py (_code-tools/_python-tools) | 2026-08-08 | CoWork's bash/Python sandbox has no general outbound network access — confirmed via 6 independent methods (DNS, raw TCP socket, curl, wget, fresh pip install, plain HTTP), all blocked identically by a local proxy (403/DNS failure). Platform restriction, not fixable by any script. fetch_decode.py's gzip-decode logic has never actually been exercised — its substrate is non-functional for network fetch in this sandbox. Open question: whether production Captain execution shares this restriction. | 6-method network diagnostic | [C]
 
 SuffNotVol | Any retrieval unit — domain-agnostic law | System-wide | 2026-08-14 | **THE LAW: retrieval sufficiency is not volume.** A substrate can return an abundant, well-formed, structurally perfect document that is entirely non-current — and every check the AI OS owns will pass it. Volume without currency, and currency without volume — the same page, the same moment, two mirror-image failures. Tier 1 cannot see either: presence, type, and constants are all satisfied by stale text and by thin text alike. This is `ProvNotTruth`'s sibling on the RETRIEVAL axis rather than the WRITE axis — that law says a sourced claim may still be false; this one says a fetched document may still be wrong-as-current. THE OPERATIONAL CONSEQUENCE: any Captain Constraint that says "escalate when the cheaper substrate is judged insufficient" is under-specified until "insufficient" names CURRENCY and COVERAGE, not merely emptiness. A judgment layer measuring sufficiency by page length will escalate exactly never and ship stale content with a clean audit trail. Applies to ANY retrieval unit, ANY substrate — usnews.com is where it was found, not where it is bounded. **THE LADDER RANKS COST, NOT COVERAGE.** A higher rung is not a superset of a lower one — it is a DIFFERENT instrument with a different failure mode, and climbing it can subtract content as easily as add it. Any Colonel that treats escalation as strict improvement will silently lose data on server-rendered pages. Corollary for `%compose` and every future Battle Plan: the substrate choice is a per-URL judgment, never a standing preference. Current substrate status for each Captain named above lives in that Captain's own spec under Confirmation Discipline — "web_fetch.md" and "browser_scrape.md". | Live tests, %compose invocations, two substrates against two URLs | [C]
 

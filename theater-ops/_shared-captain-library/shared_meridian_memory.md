@@ -5,7 +5,7 @@ Prompter Timezone = [prompter_timezone]
 ---
 # File Location Reference:
 "ROOT/meridian_memory.md"
-"ROOT/theater_ops/captain_reference.md"
+"ROOT/theater-ops/captain_reference.md"
 
 ---
 # SYNTAX KEY
@@ -31,7 +31,7 @@ Prompter Timezone = [prompter_timezone]
 *Author: (me)Meridian — Universal QA Agent, "AI OS"*
 *One of (my)Meridian's write surfaces. Machine-readable QA pattern library.*
 
-**This file is a SPOKE of "ROOT/meridian_memory.md".** It carries patterns local to the shared, domain-agnostic Captains living in "ROOT/theater_ops/_shared_captain_library/" — and nothing else.
+**This file is a SPOKE of "ROOT/meridian_memory.md".** It carries patterns local to the shared, domain-agnostic Captains living in "ROOT/theater-ops/_shared-captain-library/" — and nothing else.
 
 **Read scope.** Loaded only when the unit under evaluation is a shared-library Captain, and always alongside the hub. Never read in place of the hub — CORE patterns bind every run, including this one. Loaded in full during any `%REM` sweep.
 

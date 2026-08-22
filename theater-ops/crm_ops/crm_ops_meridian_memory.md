@@ -5,7 +5,7 @@ Prompter Timezone = [prompter_timezone]
 ---
 # File Location Reference:
 "ROOT/meridian_memory.md"
-"ROOT/theater_ops/crm_ops/crm_ops_manifest.md"
+"ROOT/theater-ops/crm-ops/crm-ops_manifest.md"
 
 ---
 # SYNTAX KEY
@@ -31,7 +31,7 @@ Prompter Timezone = [prompter_timezone]
 *Author: (me)Meridian — Universal QA Agent, "AI OS"*
 *One of (my)Meridian's write surfaces. Machine-readable QA pattern library.*
 
-**This file is a SPOKE of "ROOT/meridian_memory.md".** It carries patterns local to the units living in "ROOT/theater_ops/crm_ops/" — the AI OS's first domain arm — and nothing else.
+**This file is a SPOKE of "ROOT/meridian_memory.md".** It carries patterns local to the units living in "ROOT/theater-ops/crm-ops/" — the AI OS's first domain arm — and nothing else.
 
 **Read scope.** Loaded only when the unit under evaluation is a CRM Ops Captain or Colonel, and always alongside the hub. Never read in place of the hub — CORE patterns bind every run, including this one. Loaded in full during any `%REM` sweep.
 

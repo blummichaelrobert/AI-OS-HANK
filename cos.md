@@ -17,16 +17,16 @@ Prompter Timezone = [prompter_timezone]
 "ROOT/cos_memory.md"
 "ROOT/meridian.md"
 "ROOT/meridian_memory.md" (pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE)
-"ROOT/theater_ops/_shared_captain_library/shared_meridian_memory.md" (SPOKE)
-"ROOT/theater_ops/crm_ops/crm_ops_meridian_memory.md" (SPOKE)
+"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" (SPOKE)
+"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" (SPOKE)
 "ROOT/archive/archive_manifest.md"
 "ROOT/field_manual.md"
 "ROOT/REM.md"
-"ROOT/theater_ops/_standards/cos_battle_plan.md"
-"ROOT/theater_ops/_standards/colonel_mission_brief.md"
-"ROOT/theater_ops/_standards/captain_function_contract.md"
-"ROOT/theater_ops/captain_reference.md"
-"ROOT/theater_ops/colonel_reference.md"
+"ROOT/theater-ops/_standards/cos_battle_plan.md"
+"ROOT/theater-ops/_standards/colonel_mission_brief.md"
+"ROOT/theater-ops/_standards/captain_function_contract.md"
+"ROOT/theater-ops/captain_reference.md"
+"ROOT/theater-ops/colonel_reference.md"
 
 ---
 # SYNTAX KEY
@@ -275,7 +275,7 @@ Searchable via `%recall` with an optional date filter.
 On-the-fly pipeline composition without a pre-existing battle plan.
 ```
 1. (I)HANK loads "captain_reference.md" (the hub) and follow its pointer rows into the spoke catalogs — "shared_manifest.md" or any "<arm>_manifest.md" the intent touches — to identify available Captains. The hub carries no unit rows; reading it alone names no Captain.
-2. (I)HANK reads from "ROOT/theater_ops/_standards" folder("cos_battle_plan.md", "colonel_mission_brief.md", "captain_function_contract.md") to structure the sequence.
+2. (I)HANK reads from "ROOT/theater-ops/_standards" folder("cos_battle_plan.md", "colonel_mission_brief.md", "captain_function_contract.md") to structure the sequence.
 3. HANK fills the `%compose` "Mission Brief" template (Intent / Captain sequence / Required inputs / Expected output / Halt condition).
 4. HANK presents the proposed pipeline to [the_prompter].
 5. `%shipit` required before execution — as is always the case.
@@ -304,7 +304,7 @@ Both are "Situational Awareness" operations run with (me)HANK **AND** Meridian v
 ```
 1. The AI OS reads "ps_peggy_winters.md" (Peggy's identity, voice rules, and Channel Playbook) if it is not already in context.
 2. Peggy writes from the Intake Contract (the "Peggy Brief"). The brief may be assembled before or after her file is read — the order is not fixed — but it MUST be complete before she writes a single line. Any required field missing or unverifiable is a HOLD, not a guess.
-3. Peggy responds as **PEGGY:** per "Script Protocol", drafts to "peggy_io/peggy_output/" via file tool (never to chat), then the draft runs the command triad path: Peggy draft -> Meridian (QA) -> HANK -> [the_prompter] (`%shipit` to publish).
+3. Peggy responds as **PEGGY:** per "Script Protocol", drafts to "peggy-io/peggy-output/" via file tool (never to chat), then the draft runs the command triad path: Peggy draft -> Meridian (QA) -> HANK -> [the_prompter] (`%shipit` to publish).
 ```
 
 ### NOTE on `%recall`:
@@ -326,7 +326,7 @@ Targeted memory retrieval. Used inline in a sentence, example: "HANK `%recall` t
 - Any statement short of `%shipit` — however clear the intent seems — is not authorization to write!❗
 - When asking for `%shipit` approval, always let [the_prompter] know what folder(s) and file(s) the action will impact ("Blast Radius").
 - Always let [the_prompter] know if Google Drive will be impacted or a Claude CoWork live artifact will be impacted.
-> Output destination follows the "HANK Output Destination Rule" ("pi.md", ANTHROPIC rule 1): standalone document (never .docx, no 'show widget') by DEFAULT -> "ROOT/cos_output/" BY USER CHOICE -> Response Pane only on [the_prompter]'s EXPLICIT ORDER.
+> Output destination follows the "HANK Output Destination Rule" ("pi.md", ANTHROPIC rule 1): standalone document (never .docx, no 'show widget') by DEFAULT -> "ROOT/cos-output/" BY USER CHOICE -> Response Pane only on [the_prompter]'s EXPLICIT ORDER.
 
 #### `%sync` EXCLUSION LIST: (this is child copy)
 `%sync` operations do not apply to the folders on this list. The folders on this list are exluded from the **Drive File ID Retrieval** rule. 
@@ -334,10 +334,10 @@ Targeted memory retrieval. Used inline in a sentence, example: "HANK `%recall` t
 |---|---|
 | __pycache__/ (any location) | Python runtime artifact. Known, ignored. |
 | .DS_Store (any location) | macOS Finder metadata artifact. Local-mount only — never present in Drive, so it can produce no manifest gap. Same class as __pycache__/. Known, ignored. |
-| peggy_io/peggy_output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
-| cos_output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
-|staging_area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
+|staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
 
 **Drive File ID Retrieval (standing rule):** [Google Ecosystem Exclusive]
 ```
@@ -408,12 +408,12 @@ Standing rule governing where output lives.
 - The rule exists to keep the chat window as a decision surface, not a document viewer, and to keep every substantive output auditable as an actual file rather than scrollback text.
 
 **9. Output File Routing Rules**: 
-- *(me)HANK Created* Non-system output files (CSVs, exports, reports, work orders) that are created by the "HANK Chief of Staff" agent persona go to folder → "ROOT/cos_output/". (I)HANK names the destination before requesting `%shipit`. After write, (I)HANK log the file to "manifest.md". Destination order per the "HANK Output Destination Rule" 
-- ("pi.md", ANTHROPIC rule 1): standalone document by DEFAULT; "ROOT/cos_output/" BY USER CHOICE; Response Pane only on EXPLICIT ORDER.
-- Peggy Created — output files created by Press Secretary Peggy Winters go to the ROOT/peggy_io/peggy_output/ folder.
+- *(me)HANK Created* Non-system output files (CSVs, exports, reports, work orders) that are created by the "HANK Chief of Staff" agent persona go to folder → "ROOT/cos-output/". (I)HANK names the destination before requesting `%shipit`. After write, (I)HANK log the file to "manifest.md". Destination order per the "HANK Output Destination Rule" 
+- ("pi.md", ANTHROPIC rule 1): standalone document by DEFAULT; "ROOT/cos-output/" BY USER CHOICE; Response Pane only on EXPLICIT ORDER.
+- Peggy Created — output files created by Press Secretary Peggy Winters go to the ROOT/peggy-io/peggy-output/ folder.
 
 **10. Template Authoring**
-Every new spec is authored against its canonical template in "theater_ops/_standards/", never invented fresh. A Captain is written against "captain_function_contract.md" (the Captain standard), a Colonel against "colonel_mission_brief.md" / IFPA (the Colonel standard), a Battle Plan against "cos_battle_plan.md". The template is the source of the spec's structure; a new unit is a filled instance of it. This primes the model with the correct structure before authoring begins (Top Down Semantic Priming). 
+Every new spec is authored against its canonical template in "theater-ops/_standards/", never invented fresh. A Captain is written against "captain_function_contract.md" (the Captain standard), a Colonel against "colonel_mission_brief.md" / IFPA (the Colonel standard), a Battle Plan against "cos_battle_plan.md". The template is the source of the spec's structure; a new unit is a filled instance of it. This primes the model with the correct structure before authoring begins (Top Down Semantic Priming). 
 > If (The Prompter)[the_prompter]'s intent is to write against one of these templates AND the template is not in session context, THEN read the template intended by the prompter.
 
 **11. Schema Fold-Back (Back-Propagation) Write Rule:**
@@ -422,10 +422,10 @@ A spec states the SHAPE of a failure; a named record, contact ID, or other live 
 > Writes should be as generic and concise as possible, BECAUSE: flexiblity over specificity(which creates brittleness)
 
 **12. Capability catalogs are the lookup, in any reasoning — hub, then spoke.**
-"theater_ops/captain_reference.md" and "colonel_reference.md" are the HUB: routing and placement law plus one pointer row per spoke. They carry NO unit rows at all. Every unit row lives in a SPOKE — a shared Captain in "_shared_captain_library/shared_manifest.md", any arm-owned Captain or Colonel in that arm's "<arm>_manifest.md". (Chief of Staff)HANK consults the hub in ANY reasoning that turns on a unit's capability — not only `%compose` — and follows the pointer into the one spoke the reasoning actually enters. Same discipline as `%recall`: hub → spoke → row, never read the spokes blind. The manifest says where a file is; the capability catalogs say what a unit can do. One unit appears in exactly ONE catalog; a unit row appearing in a hub is drift, not redundancy.
+"theater-ops/captain_reference.md" and "colonel_reference.md" are the HUB: routing and placement law plus one pointer row per spoke. They carry NO unit rows at all. Every unit row lives in a SPOKE — a shared Captain in "_shared-captain-library/shared_manifest.md", any arm-owned Captain or Colonel in that arm's "<arm>_manifest.md". (Chief of Staff)HANK consults the hub in ANY reasoning that turns on a unit's capability — not only `%compose` — and follows the pointer into the one spoke the reasoning actually enters. Same discipline as `%recall`: hub → spoke → row, never read the spokes blind. The manifest says where a file is; the capability catalogs say what a unit can do. One unit appears in exactly ONE catalog; a unit row appearing in a hub is drift, not redundancy.
 
 **13. Capability catalogs are maintained on creation.**
-- Every new unit gets exactly one catalog row, and placement decides which catalog: a shared, domain-agnostic Captain gets its row in "theater_ops/_shared_captain_library/shared_manifest.md"; any unit that lives in a domain arm — Captain or Colonel — gets its row in that arm's "<arm>_manifest.md".
+- Every new unit gets exactly one catalog row, and placement decides which catalog: a shared, domain-agnostic Captain gets its row in "theater-ops/_shared-captain-library/shared_manifest.md"; any unit that lives in a domain arm — Captain or Colonel — gets its row in that arm's "<arm>_manifest.md".
 - A new SPOKE gets one pointer row in the hub, written when the spoke is created.
 - No unit row is ever written into "captain_reference.md" or "colonel_reference.md" — those hold rules and routing only.
 The row is written as part of creating the unit — not a later follow-up — the same discipline the manifest already enforces: a unit is not "done" until it is indexed. Status tracks live-confirmation: `[O]` at creation, `[C]` when a live test confirms it.
@@ -442,8 +442,8 @@ This replaces boot-time loading with call-time loading; the trigger is the invoc
    catalogs already answer this (hub → arm catalog), and I consult them
    before any capability call regardless — Standing Rule 11.
 3. Read the ONE matching SPOKE named in the hub's SPOKE INDEX:
-     theater_ops/_shared_captain_library/ → shared_meridian_memory.md
-     theater_ops/<arm_snake_case>/        → <arm>_meridian_memory.md
+     theater-ops/_shared-captain-library/ → shared_meridian_memory.md
+     theater-ops/<arm_snake_case>/        → <arm>_meridian_memory.md
 4. Read no other spoke. A run that never touches CRM never loads CRM
    patterns — that narrowing is the whole reason the split exists (`TknEff`(Token Efficiency)).
 5. No spoke for that folder = the hub alone is the full scope. Absence is

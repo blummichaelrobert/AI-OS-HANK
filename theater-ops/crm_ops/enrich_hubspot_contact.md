@@ -16,14 +16,14 @@ Batch Size = 5
 ---
 
 ## File Location Reference:
-"ROOT/theater_ops/crm_ops/crm_ops_manifest.md"
-"ROOT/theater_ops/crm_ops/hubspot_contact_search.md"
-"ROOT/theater_ops/crm_ops/hubspot_contact_update.md"
-"ROOT/theater_ops/crm_ops/hubspot_contact_note_create.md"
-"ROOT/theater_ops/_shared_captain_library/web_search.md"
-"ROOT/theater_ops/_shared_captain_library/web_fetch.md"
-"ROOT/theater_ops/_shared_captain_library/browser_scrape.md"
-"ROOT/theater_ops/captain_reference.md"
+"ROOT/theater-ops/crm-ops/crm-ops_manifest.md"
+"ROOT/theater-ops/crm-ops/hubspot_contact_search.md"
+"ROOT/theater-ops/crm-ops/hubspot_contact_update.md"
+"ROOT/theater-ops/crm-ops/hubspot_contact_note_create.md"
+"ROOT/theater-ops/_shared-captain-library/web_search.md"
+"ROOT/theater-ops/_shared-captain-library/web_fetch.md"
+"ROOT/theater-ops/_shared-captain-library/browser_scrape.md"
+"ROOT/theater-ops/captain_reference.md"
 
 ---
 

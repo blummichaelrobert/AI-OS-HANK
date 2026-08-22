@@ -9,7 +9,7 @@
 
 | Arm | Spoke Catalog | Colonels | Status summary |
 |---|---|---|---|
-| CRM Ops | "theater_ops/crm_ops/crm_ops_manifest.md" | `enrich_hubspot_contact` | 1 unit — [O] |
+| CRM Ops | "theater-ops/crm-ops/crm-ops_manifest.md" | `enrich_hubspot_contact` | 1 unit — [O] |
 
 ---
 

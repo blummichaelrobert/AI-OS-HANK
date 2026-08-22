@@ -1,6 +1,6 @@
 # Shared Captain Library — Capability Catalog
 *Canonical capability lookup for every shared, domain-agnostic Captain — what each one does, its runtime, inputs, and outputs.*
-*SPOKE of "theater_ops/captain_reference.md".*
+*SPOKE of "theater-ops/captain_reference.md".*
 *Not a domain arm — this is the DEFAULT placement every Captain starts in. It holds Captains only; a Colonel is domain-bound by definition and can never live here.*
 
 ---
@@ -29,6 +29,6 @@
 ## Related Files
 | File | Relationship |
 |---|---|
-| "theater_ops/captain_reference.md" | The HUB this file is a spoke of — placement law, reading order, `%compose` brief template. |
+| "theater-ops/captain_reference.md" | The HUB this file is a spoke of — placement law, reading order, `%compose` brief template. |
 | "shared_meridian_memory.md" | Meridian's pattern-library SPOKE for these same Captains. Sits in this folder; loaded alongside the hub whenever a unit here is under evaluation. |
 | Each Captain's `.md` in this folder | The Function Contract — full spec, Validation Schema, and Confirmation Discipline. This catalog says what a Captain does; the contract says exactly how. |

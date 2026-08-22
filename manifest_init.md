@@ -9,10 +9,10 @@
 |---|---|
 | __pycache__/ (any location) | Python runtime artifact. Known, ignored. |
 | .DS_Store (any location) | macOS Finder metadata artifact. Local-mount only — never present in Drive, so it can produce no manifest gap. Same class as __pycache__/. Known, ignored. |
-| peggy_io/peggy_output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
-| cos_output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
-|staging_area/| transit center, not for long term storage. |
+|staging-area/| transit center, not for long term storage. |
 
 ---
 ### START REGION: DELETABLE INITIAL SYNC BLOCK
@@ -46,13 +46,13 @@
 **Subfolders:**
 | Folder | ID |
 |---|---|
-| _code_tools | [Drive ID HERE] |
+| _code-tools | [Drive ID HERE] |
 | archive | [Drive ID HERE] |
-| theater_ops | [Drive ID HERE] |
+| theater-ops | [Drive ID HERE] |
 
 ---
 
-## theater_ops/
+## theater-ops/
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
@@ -64,12 +64,12 @@
 | Folder | ID |
 |---|---|
 | _standards | [Drive ID HERE] |
-| _shared_captain_library |
-| crm_ops | [Drive ID HERE] |
+| _shared-captain-library |
+| crm-ops | [Drive ID HERE] |
 
 ---
 
-### theater_ops/_standards/
+### theater-ops/_standards/
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
@@ -82,7 +82,7 @@
 
 ---
 
-### theater_ops/_shared_captain_library/
+### theater-ops/_shared-captain-library/
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
@@ -98,38 +98,38 @@
 
 ---
 
-### theater_ops/crm_ops/
+### theater-ops/crm-ops/
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
 |---|---|
-| crm_ops_manifest.md | [Drive ID HERE] |
+| crm-ops_manifest.md | [Drive ID HERE] |
 | enrich_hubspot_contact.md | [Drive ID HERE] |
 | hubspot_contact_lookup.md | [Drive ID HERE] |
 | hubspot_contact_create.md | [Drive ID HERE] |
 | hubspot_contact_update.md | [Drive ID HERE] |
 | hubspot_contact_search.md | [Drive ID HERE] |
 | hubspot_contact_note_create.md | [Drive ID HERE] |
-| crm_ops_meridian_memory.md | [Drive ID HERE] |
+| crm-ops_meridian_memory.md | [Drive ID HERE] |
 
 **Subfolders:** none.
 
 ---
 
-## _code_tools/
+## _code-tools/
 **Folder ID:** [Drive ID HERE]
 **Files:** none at ROOT of this folder.
 
 **Subfolders:**
 | Folder | ID |
 |---|---|
-| _python_tools | [Drive ID HERE] |
-| _html_tools | [Drive ID HERE]|
-| _web_script_tools | [Drive ID HERE] |
+| _python-tools | [Drive ID HERE] |
+| _html-tools | [Drive ID HERE]|
+| _web-script-tools | [Drive ID HERE] |
 
 ---
 
-### _code_tools/_python_tools/
+### _code-tools/_python-tools/
 **Folder ID:** [Drive ID HERE]
 
 | File | ID |
@@ -140,7 +140,7 @@
 
 ---
 
-### _code_tools/_html_tools/
+### _code-tools/_html-tools/
 **Folder ID:** [Drive ID HERE]
 
 **Files:** none. Empty at creation 2026-08-13.
@@ -148,7 +148,7 @@
 
 ---
 
-### _code_tools/_web_script_tools/
+### _code-tools/_web-script-tools/
 **Folder ID:** [Drive ID HERE]
 
 **Files:** none.
@@ -156,8 +156,8 @@
 **Subfolders:**
 | Folder | ID |
 |---|---|
-| _javascript_tools | [Drive ID HERE] | NEW, created 2026-08-13. `.js` lane per FileLane. EMPTY at creation. |
-| _typescript_tools | [Drive ID HERE] | NEW, created 2026-08-13. `.tsx` lane per FileLane — closes the gap Meridian flagged (FileLane names four file types; the original three-folder proposal left `.tsx` homeless). EMPTY at creation. |
+| _javascript-tools | [Drive ID HERE] | NEW, created 2026-08-13. `.js` lane per FileLane. EMPTY at creation. |
+| _typescript-tools | [Drive ID HERE] | NEW, created 2026-08-13. `.tsx` lane per FileLane — closes the gap Meridian flagged (FileLane names four file types; the original three-folder proposal left `.tsx` homeless). EMPTY at creation. |
 
 ---
 

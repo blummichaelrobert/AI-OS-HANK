@@ -6,7 +6,7 @@
 
 ## Arm Scope
 - **In scope:** retrieval, creation, update, search, and annotation of CRM contact records; judgment roles that reason over them.
-- **Out of scope:** domain-agnostic retrieval (web search, fetch, browser, RSS, transcript) — those stay in "_shared_captain_library/".
+- **Out of scope:** domain-agnostic retrieval (web search, fetch, browser, RSS, transcript) — those stay in "_shared-captain-library/".
 - **Substrate today:** HubSpot MCP. A future Salesforce or Pipedrive Captain joins this arm without renaming it.
 
 ---
@@ -32,6 +32,6 @@
 ---
 
 ## Shared Captains This Arm Depends On
-*Listed for reasoning convenience only. These live in "theater_ops/_shared_captain_library/" and are catalogued in "shared_manifest.md" — never duplicated here as owned rows. Route through the hub: "captain_reference.md" -> Shared Captain Library pointer row -> "shared_manifest.md".*
+*Listed for reasoning convenience only. These live in "theater-ops/_shared-captain-library/" and are catalogued in "shared_manifest.md" — never duplicated here as owned rows. Route through the hub: "captain_reference.md" -> Shared Captain Library pointer row -> "shared_manifest.md".*
 
 `web_search` · `web_fetch` · `browser_scrape`

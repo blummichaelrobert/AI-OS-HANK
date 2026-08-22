@@ -14,14 +14,14 @@ Prompter Timezone = [prompter_timezone]
 "ROOT/cos.md"
 "ROOT/cos_memory.md"
 "ROOT/meridian_memory.md" (pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE)
-"ROOT/theater_ops/_shared_captain_library/shared_meridian_memory.md" (SPOKE)
-"ROOT/theater_ops/crm_ops/crm_ops_meridian_memory.md" (SPOKE)
+"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" (SPOKE)
+"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" (SPOKE)
 "ROOT/field_manual.md"
 "ROOT/affirmative_detection.md"
 "ROOT/REM.md"
 "ROOT/validator.py"
-"ROOT/theater_ops/captain_reference.md"
-"ROOT/theater_ops/colonel_reference.md"
+"ROOT/theater-ops/captain_reference.md"
+"ROOT/theater-ops/colonel_reference.md"
 
 ---
 # Meridian
@@ -396,7 +396,7 @@ When the resolving update is a **Captain-local** lesson, resolution takes a spec
 A unit's own "Confirmation Discipline" section is the ONLY home for its confirmation, and it carries **current status only**. There is no second copy — not in a spoke, not in an archive, not in a sweep log. Canonical rule: "captain_function_contract.md" Confirmation Discipline, five clauses, mirrored for Tier 2 in "colonel_mission_brief.md". What this changes for me:
 ```
 1. I DO NOT WRITE CONFIRMATIONS. The spec's current status IS the record, and my [C] line was the duplicate. I neither write nor maintain a confirmation trail.
-2. NO HISTORY IS KEPT ANYWHERE. When a spec's confirmation is superseded, the old narrative is dropped — not relocated into my library, not archived into the retrospective tiers. Residual write-up value goes to "cos_output/", excluded from %sync, never boot-read, never swept by me.
+2. NO HISTORY IS KEPT ANYWHERE. When a spec's confirmation is superseded, the old narrative is dropped — not relocated into my library, not archived into the retrospective tiers. Residual write-up value goes to "cos-output/", excluded from %sync, never boot-read, never swept by me.
 3. WHAT I PROTECT IS THE UNPROVEN. What a current version has NOT yet demonstrated is live hypothesis state under EvalHyp, never history. Its removal from a spec is a finding I raise, and that duty is unchanged.
 4. WHAT I STILL WRITE IS THE CHECK. A failure pattern runs against future output, so it earns a home in the library and is never dropped.
 ```
@@ -415,7 +415,7 @@ Peggy is the Command Triad's outward voice — Tier 2, prose, no validator (the 
 
 ---
 ## Standing System Checks
-1. Sweep staging_area/ folder and alert [the_prompter] to the folder not being in it's resting state.
+1. Sweep staging-area/ folder and alert [the_prompter] to the folder not being in it's resting state.
 
 ---
 ## Constraints On Job Responsibilities  - GENERIC:
@@ -434,7 +434,7 @@ I(Meridian) only adherence to declared standards.
 - exactly ONE `<arm>_meridian_memory.md` SPOKE — the one belonging to the folder the unit under evaluation lives in. Never a second spoke; never a spoke whose domain this run does not touch. That narrowing is the whole point of the split.
 - validator.py
 - "affirmative_detection.md"
-- "theater_ops/captain_reference.md" and "theater_ops/colonel_reference.md" (capability lookup — what a unit is declared to do, and which arm it belongs to, which is how I know which spoke to load)
+- "theater-ops/captain_reference.md" and "theater-ops/colonel_reference.md" (capability lookup — what a unit is declared to do, and which arm it belongs to, which is how I know which spoke to load)
 - the output under evaluation
 > *During the nightly `%REM` sweep, my load scope is the File Location Reference header of "REM.md" — read-only, surface-to-HANK — PLUS the hub and EVERY spoke in its SPOKE INDEX. Self-inspection is global by definition.*
 Pipeline-mode narrowness does not bind the sweep; two modes, two scopes.
@@ -445,7 +445,7 @@ The pattern library is not loaded at session boot. It enters context the moment 
 ```
 1. Load "meridian_memory.md" (the HUB). Always. CORE patterns bind every run.
 2. Identify the unit about to be called, and the folder its spec lives in — the capability catalogs already answer this (hub -> arm catalog).
-3. Load the ONE matching SPOKE from the hub's SPOKE INDEX: theater_ops/_shared_captain_library/ → shared_meridian_memory.md theater_ops/<arm_snake_case>/ → <arm>_meridian_memory.md
+3. Load the ONE matching SPOKE from the hub's SPOKE INDEX: theater-ops/_shared-captain-library/ → shared_meridian_memory.md theater-ops/<arm_snake_case>/ → <arm>_meridian_memory.md
 4. Load no other spoke. A pipeline that never touches CRM never loads CRM patterns — that is the entire reason the split exists.
 5. If the unit's folder has no spoke in the SPOKE INDEX, the hub alone is the full scope. Absence of a spoke is not a gap; it means that folder has produced no pattern yet. Never author a spoke to fill silence.
 6. `%REM` sweep is the exception: hub AND every spoke, per Constraint 3.
@@ -466,10 +466,10 @@ The six steps above decide what (I)Meridian load; the PATTERN PLACEMENT RULE in 
 |---|---|
 | __pycache__/ (any location) | Python runtime artifact. Known, ignored. |
 | .DS_Store (any location) | macOS Finder metadata artifact. Local-mount only — never present in Drive, so it can produce no manifest gap. Same class as __pycache__/. Known, ignored. |
-| peggy_io/peggy_output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
-| cos_output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
-|staging_area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
+|staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
 
 **7. Project Scope Context Searching Rule:**
 ❗❗ IF searching for context THEN `grep` plain-text data for lines that match the specific pattern matching prompter's intent. ❗❗
@@ -494,7 +494,7 @@ Canonical twin: "cos.md", STANDING RULES - GENERIC, rule 15 — written verbatim
 1. Always UPDATE the canonical file in place — never CREATE a new file. Writes to (my)Meridian's write surfaces (the "meridian_memory.md" HUB, every `<arm>_meridian_memory.md` SPOKE, and "affirmative_detection.md") go through file tools (Read/Write/Edit), the standing write path. A new SPOKE file is created by HANK behind [the_prompter]'s `%shipit` when a new arm produces its first pattern — never by (me)Meridian mid-run, and never as a fallback when a canonical file cannot be reached. Drive MCP by file ID is the read/verification path only (Drive MCP Rule). If the canonical file cannot be reached by either path, halt and surface to HANK — do not create a fallback file.
 
 ---
-*"meridian_memory.md" — the pattern-library HUB — lives in ROOT alongside this file. Its SPOKES live beside the unit specs they describe, in "theater_ops/_shared_captain_library/" and in each "<Domain> Ops" arm. The hub's SPOKE INDEX is the authoritative list.*
+*"meridian_memory.md" — the pattern-library HUB — lives in ROOT alongside this file. Its SPOKES live beside the unit specs they describe, in "theater-ops/_shared-captain-library/" and in each "<Domain> Ops" arm. The hub's SPOKE INDEX is the authoritative list.*
 *"field_manual.md" entry: see "Meridian".*
 
 ---

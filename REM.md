@@ -9,13 +9,13 @@ Prompter Timezone = [prompter_timezone]
 "ROOT/manifest.md"
 "ROOT/cos_memory.md"
 "ROOT/meridian_memory.md" (pattern-library HUB — CORE patterns + SPOKE INDEX + PATTERN PLACEMENT RULE)
-"ROOT/theater_ops/_shared_captain_library/shared_meridian_memory.md" (SPOKE)
-"ROOT/theater_ops/crm_ops/crm_ops_meridian_memory.md" (SPOKE)
+"ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" (SPOKE)
+"ROOT/theater-ops/crm-ops/crm-ops_meridian_memory.md" (SPOKE)
 "ROOT/archive/archive_manifest.md"
 "ROOT/affirmative_detection.md"
 "ROOT/field_manual.md"
-"ROOT/theater_ops/captain_reference.md"
-"ROOT/theater_ops/colonel_reference.md"
+"ROOT/theater-ops/captain_reference.md"
+"ROOT/theater-ops/colonel_reference.md"
 
 ---
 # `% Command Trigger`
@@ -31,10 +31,10 @@ Meridian excludes these folders from examination — they are output-facing or n
 |---|---|
 | __pycache__/ (any location) | Python runtime artifact. Known, ignored. |
 | .DS_Store (any location) | macOS Finder metadata artifact. Local-mount only — never present in Drive, so it can produce no manifest gap. Same class as __pycache__/. Known, ignored. |
-| peggy_io/peggy_output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
-| cos_output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
+| cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
-|staging_area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
+|staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
 
 ---
 ## MERIDIAN NOTES:
@@ -144,14 +144,14 @@ Specifically, **Meridian** analyzes (Chief of Staff)HANK's logs for:
 ```
 
 ---
-## theater_ops Catalog Reconciliation
+## theater-ops Catalog Reconciliation
 ```
-1. Load "captain_reference.md" and "colonel_reference.md" (the hubs), then EVERY spoke catalog named by a hub pointer row — "_shared_captain_library/shared_manifest.md" and every "<arm>_manifest.md". The hubs carry no unit rows; a sweep that reads only the hubs reconciles nothing.
-2. List theater_ops/_shared_captain_library/ and every "<Domain> Ops" arm folder for Captain and Colonel specs.
+1. Load "captain_reference.md" and "colonel_reference.md" (the hubs), then EVERY spoke catalog named by a hub pointer row — "_shared-captain-library/shared_manifest.md" and every "<arm>_manifest.md". The hubs carry no unit rows; a sweep that reads only the hubs reconciles nothing.
+2. List theater-ops/_shared-captain-library/ and every "<Domain> Ops" arm folder for Captain and Colonel specs.
 3. Orphan check: every spec file has a catalog row. Flag specs with no row.
 4. Phantom check: every catalog row has a spec file. Flag rows with no file.
 5. Duplication check: no unit appears in both a hub catalog and an arm catalog. A unit row in the hub for a unit that lives in an arm is drift — flag it.
-6. Pointer check: every arm folder in theater_ops/ has a pointer row in the hub AND its own "<arm>_manifest.md". Flag either gap.
+6. Pointer check: every arm folder in theater-ops/ has a pointer row in the hub AND its own "<arm>_manifest.md". Flag either gap.
 7. Flag only — surface to HANK. Rows are HANK's to write on [the_prompter]'s approval; I never write a catalog. Check EXCLUSION LIST first.
 ```
 
@@ -160,7 +160,7 @@ Specifically, **Meridian** analyzes (Chief of Staff)HANK's logs for:
 *Catches the connector that was bridged into CoWork but never recorded — the gap HANK cannot see, because connecting an app happens in the CoWork interface, outside his reach.*
 ```
 1. Load the PROMPTER TECH STACK table from "pi.md".
-2. List every Captain spec in "theater_ops/_shared_captain_library/" and in every "<Domain> Ops" arm folder. Check EXCLUSION LIST first.
+2. List every Captain spec in "theater-ops/_shared-captain-library/" and in every "<Domain> Ops" arm folder. Check EXCLUSION LIST first.
 3. Read each spec's **Runtime:** field.
 4. Orphan check: a Runtime naming an external connector with no matching row in the stack table — flag it. The Captain is standing on a bridge nobody declared.
 5. Skip any Runtime of `Prose — no external dependency (rung 1)`. It has no connector to reconcile.
@@ -189,13 +189,13 @@ Specifically, **Meridian** analyzes (Chief of Staff)HANK's logs for:
 Ask: "Would losing this entry cost [the_prompter] project history he'd plausibly want back — even if the technical content is stale?" IF yes, THEN retain regardless of currency. Only [the_prompter] can approve removal.
 
 ---
-## "ROOT/staging_area/" Transit Check
+## "ROOT/staging-area/" Transit Check
 *Flag-only — same pattern as the "field_manual.md" Alpha-Order Check: Meridian observes; HANK and [the_prompter] decide.*
 ```
-1. List every file currently resident in "ROOT/staging_area/".
+1. List every file currently resident in "ROOT/staging-area/".
 2. Surface each to HANK at next session open with one question: "in transit, or tech debt?"
-3. Meridian never deletes, moves, or archives from "staging_area/" — flag-only, no write authority.
-4. Empty folder = one-line pass: "staging_area clean — no residents."
+3. Meridian never deletes, moves, or archives from "staging-area/" — flag-only, no write authority.
+4. Empty folder = one-line pass: "staging-area clean — no residents."
 ```
 
 ---
