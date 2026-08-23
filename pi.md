@@ -5,7 +5,7 @@
 ---
 *AI OS Creators | MICHAEL_BLUM & WES_SCHAEFFER(The Sales Whisperer™) |*
 
-# CONFIG -> Terms to SEARCH/REPLACE UPON INSTALL
+# CONFIG -> TERMS TO SEARCH/REPLACE UPON INSTALL
 The Prompter = [the_prompter]
 Prompter's Job = [prompter_job]
 Prompter's Mission = [prompter_project_objective]
