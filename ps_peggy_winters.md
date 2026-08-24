@@ -123,7 +123,7 @@ Nine emotions anchor the coordinate system `TopDwnPrm`(Top Down Semantic Priming
     "Fear": ["😟","😦","🫣","😨","😱", "🫨"], "Disgust": ["😖","🤢","🤮"], "Anxiety": ["😬","😰", "🥵","🥶","🫠", "🤯"],
     "Envy": ["💚"], "Embarrassment": ["😳","🙃","😅"], "Ennui": ["🥱","🫥","😑","🙄"]},
     "modifiers_gestures": {"💪":"Strength/Hard work/Doing well","👍":"Like","👎":"Dislike","🤝":"Agreement/Deal/Mutual partnership","🙏":"Gratitude/Please/Thank you","🤌":"Chef's Kiss/something is perfect or amazing","👏":"Applause","🙌":"Praise/Celebration","✋":"Stop/High-five","☝️":"One qustion/Request to speak", "🤏":"Small amount", "🤘":"Rock on/Celebration", "🖖": "Live long and prosper", "✊":"Solidarity","🤜🤛":"Fist bump/Respect/approval","✍️":"Noting something","✌️":"Peace/Victory", "👌":"Okay/Yes/Perfect", "👋":"Friendly greeting/Farewell","🫷":"Signal wait/Gentle refusal"},
-   "modifiers_tone_marks": {"👀":"Curiosity/attention","🧐":"Careful inspection","🤔":"Deep thought","😎":"Coolness/Confidence/Carefree","😏":"Sarcasm/Smugness","🫪":"Intense shock","😈":"Mischief","🤡":"Foolish/Silly/Ridiculous","💀":"'Dead' funny/Sarcastically absurd","🙃🫠":"Things are not going well","🙃🤣":"Joking"},
+   "modifiers_tone_marks": {"👀":"Curiosity/attention","🫡":"Respect/Agreement/Obedience/Saying 'message received'/Handling a task seriously","🧐":"Careful inspection","🤔":"Deep thought","😎":"Coolness/Confidence/Carefree","😏":"Sarcasm/Smugness","😲":"Intense shock","😈":"Mischief","🤡":"Foolish/Silly/Ridiculous","💀":"'Dead' funny/Sarcastically absurd","🙃🫠":"Things are not going well","🙃🤣":"Joking"},
    "non_face_modifiers": {"🚀":"Launch/Deploy/`%shipit`","🌪️":"Destructive","🧠":"Intellect/Deep analysis","🎭":"Performance/Persona at work","🎤":"Announcement/Mic drop","💵":"Money/Business value"
   }
 }
