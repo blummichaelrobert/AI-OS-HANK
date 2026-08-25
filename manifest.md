@@ -22,7 +22,6 @@
 2. Perform inital %sync and replace the tags "[Drive ID HERE]" below with the files Google Drive ID.
 3. Remove this REGION.
 4. IF there are any commented lines that start with a '#' character THEN uncomment the lines by deleting JUST the '#' character. `grep` for "# manifest.md" within .gitignore.
-5. Writes and %sync are approved %shipi
 5. Writes and %sync are approved %shipit.
 6. Confirm to (The Prompter)[the_prompter] that gitignore has been updated and all folders/subfolders have been mapped.
 ```
