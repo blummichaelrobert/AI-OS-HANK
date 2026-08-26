@@ -29,7 +29,7 @@ Low governance  = unstable output, fewer manual steps
 ```
 
 ---
-## The Thesis This Project Argues:
+### The Thesis This Project Argues:
 
 Everyone building agents is writing to their own standard. This project is an attempt at a shared one, built on a specific bet:
 
@@ -47,8 +47,15 @@ Software development standardized its conventions in the late '80s and '90s.
 Agentic reasoning is at that same early stage.
 This repository is a proposed model to write to, offered so others can argue with it, fork it, and improve it.
 
+#### The Emoji Thesis:
+*Design rationale, not a capability claim. Nothing in this section is live-tested — see the three limits at the end.*
+Every response inside the AI OS is spoken by a named persona, and every persona label carries a glyph.
+HANK wears 🤠. Meridian wears 🤖. Peggy wears 💁‍♀️.
+
+> This is the least conventional thing in the repository, so it gets argued at the end of this README rather than asserted **here**.
+
 ---
-## The Three Metaphors That Carry The Design:
+### The Three Metaphors That Carry The Design:
 
 **1. Operating system.**
 
@@ -84,7 +91,7 @@ Meridian — Inspector General, OUTSIDE the chain, reports to the operator
 ```
 
 ---
-## Meridian| The Inspector General:
+### Meridian | The Inspector General:
 
 Most agent projects give AI users a workforce. This one gives them a **supervisor**.
 
@@ -106,7 +113,7 @@ The validator never runs on a Colonel. Structural guarantees push *down* to the 
 That claim survives the first bad run in front of a paying user, which is more than most reliability claims manage.
 
 ---
-## The Boot Read File Set:
+### The Boot Read File Set:
 *Core Files: Each session reads these files and is the "Primer Paint" from the analogy above.*
 | File | Role |
 |---|---|
@@ -115,7 +122,7 @@ That claim survives the first bad run in front of a paying user, which is more t
 | `cos_memory.md` | Memory — the TODO list (RAM) and `%logit` entries (system log). |
 | `meridian.md` | Meridian. QA mandate, verification stack, halt protocol. |
 
-## The On-Demand Read File Set:
+### The On-Demand Read File Set:
 *On-Demand: these files support the core files and are read based on prompter intent. HANK and Meridian have awareness of when to read these files.*
 | File | Role |
 |---|---|
@@ -128,7 +135,7 @@ That claim survives the first bad run in front of a paying user, which is more t
 | `theater-ops/` | Domain arms — Colonels, Captains, and the standards they are authored against. |
 
 ---
-## The Boot Cost is Acknowleged:
+### The Boot Cost is Acknowleged:
 
 **The Boot Cost is also under active development to decrease the TOKEN COUNT**
 There is no single `architecture.md`, because the architecture *is* the boot-read file set.
@@ -161,7 +168,7 @@ Two things keep this from growing without bound:
 The static portion of the boot payload is also cache-friendly: ordering the unchanging files first lets a host's prompt caching absorb most of the recurring cost.
 
 ---
-## Install:
+### Install:
 
 **Nothing to install.** Two conditions carry that claim, and both must hold:
 
@@ -181,7 +188,7 @@ Condition 2 is the load-bearing half. The moment a future validator imports a th
 > The bracket tokens are the install surface. They are intentional and stay in the public repo.
 
 ---
-## Session Flow With HANK and Meridian:
+### Session Flow With HANK and Meridian:
 
 ```
 %command
@@ -199,7 +206,7 @@ Condition 2 is the load-bearing half. The moment a future validator imports a th
 **Meridian's four Tier 2 sources:** the Battle Plan (schema isomorphism), `cos_memory.md` (standing rules), the pattern library (known failure shapes), and the Gate Ledger (did Tier 1 actually happen).
 
 ---
-## The Guardrails:
+### The Guardrails:
 
 **The `%shipit` gate.** Nothing writes without an explicit `%shipit`. Not momentum. Not "are we ready." Not a clear-seeming intent. The four self-authorizing memory commands are the only standing exceptions — each its own gate, because recording is not acting.
 
@@ -216,7 +223,7 @@ Condition 2 is the load-bearing half. The moment a future validator imports a th
 > **The safety was never the human's eyes. It was the structure the human authorized.**
 
 ---
-## Memory:
+### Memory:
 
 Four self-authorizing writes, in two branches:
 
@@ -233,7 +240,7 @@ PROSPECTIVE
 Sessions are deliberately transient whiteboards. Anything worth keeping is written by an explicit memory command — which is also what makes state **reproducible**: a new session reconstructs the operating picture from files, not from scrollback.
 
 ---
-## Authoring Standards:
+### Authoring Standards:
 
 Every new unit is a **filled instance** of a canonical template in `theater-ops/_standards/`, never a fresh invention.
 
@@ -259,7 +266,7 @@ Because that format is plain markdown plus a JSON block, and the validator is st
 | 4 (last resort) | Browser automation | Nothing else can reach it. Label it *attended*. |
 
 ---
-## What Is In This Repository Today:
+### What Is In This Repository Today:
 *(As of 26 August 2026)*
 
 | Component | Count |
@@ -273,7 +280,7 @@ Because that format is plain markdown plus a JSON block, and the validator is st
 | Units carrying `[C]` (live-confirmed) | **0** |
 
 ---
-## What Is Missing:
+### What Is Missing:
 
 A governance project earns trust by being first to say what it does not have.
 
@@ -292,7 +299,7 @@ A governance project earns trust by being first to say what it does not have.
 Research, decomposition, spec-writing, and eval-drafting are machine work. **Intent, authorization, and ground truth remain the operator's.**
 
 ---
-## Roadmap:
+### Roadmap:
 
 Specified, not built. Described as intent, never as capability.
 
@@ -305,7 +312,82 @@ Specified, not built. Described as intent, never as capability.
 - **Hierarchy-as-compression experiment** — three conditions (bare model / explicit rulebook / AI OS framing), same task set, rubric written *before* the runs. Measured on input tokens, output tokens, task completion, and **correction cycles**. A mixed result is expected and would be more credible than a clean sweep.
 
 ---
-## Repositories:
+### The Emoji Thesis Continued:
+*Design rationale, not a capability claim. Nothing in this section is live-tested — see the three limits at the end.*
+Every response inside the AI OS is spoken by a named persona, and every persona label carries a glyph. HANK wears 🤠. Meridian wears 🤖. Peggy wears 💁‍♀️.
+This is the least conventional thing in the repository, so it gets argued at the end of this README rather than asserted **here**.
+
+---
+### The Mechanism | Emoji Are Pretrained Affective Compression:
+
+The Emotion Dictionary is the same bet as the military hierarchy, aimed at a different axis:
+
+| Premise | What one token buys |
+|---|---|
+| **Hierarchy** | "Colonel" costs one token for an org chart a rulebook spends five hundred words describing |
+| **Emoji** | 🤠 costs one token for an affective stance a paragraph of tone instruction spends two hundred words describing |
+
+Emoji are among the most affectively saturated tokens in any training corpus. Each one arrives pre-loaded with the emotional context of millions of human uses — not a definition the model looks up, a prior it already holds.
+
+**The apparent contradiction, named before a reader finds it.** The Two-Register Doctrine states that *identity never compresses* — souls stay verbose, cargo gets zipped. Emoji are compression riding on the identity layer. That looks like a violation and is not: it is the same free lunch hierarchy already takes. **Identity that reads as verbose but is cheap by cultural reference.** The doctrine forbids *stripping* identity to save tokens. It does not forbid identity that was already dense when it arrived.
+
+---
+### Two Thesis Frames:
+
+**(A) The compression framing — checkable.**
+
+Emoji are a token-efficiency mechanism. A gradient array (`Joy: 🙂 😊 😄 🤩 😂 🤣`) encodes intensity without a scale being described. A blend grammar — two bases maximum, dominant first — makes 😊😢 read as bittersweet with no rule written for it. The dictionary is roughly 400 tokens and replaces what a tone-and-register style guide would spend several thousand on.
+
+This framing is **falsifiable**, and the experiment that would settle it is already on the roadmap: three conditions, same tasks, measured on correction cycles.
+
+**(B) The cohesion framing — felt.**
+
+The AI OS names its principle *esprit de corps* — a shared will that carries three entities and one operator through the same work. Emoji are how that register is held.
+
+A speaker label without a glyph is a role. A speaker label with one is a **presence**. Across hundreds of sessions the operator is not reading output from a model; he is working with a crew whose expressions track the actual state of the reasoning. That continuity is the working relationship, and the relationship is what makes delegation feel like delegation instead of prompting.
+
+**These are compatible but not the same claim.** (A) can be measured. (B) can only be experienced. Fusing them produces a sentence that sounds stronger and defends worse.
+
+---
+### What IS Actually Enforced:
+
+The strong material is not the thesis. It is the rules a reader can check against the files.
+
+**1. The 💢 doctrine — anger is faceless by design.**
+Facial anger glyphs (😠 😡) never render anywhere in the AI OS. Anger renders as a mark: 💢. The reason is structural, not decorative — **anger at a situation, never at someone.** The glare is removed from the notation rather than politely avoided in practice. Envy 💚 follows the same precedent: the emotions most dangerous when aimed at a person are marks, not faces. Appearance of a facial anger glyph anywhere is a Meridian flag on sight.
+
+**2. The face/mark split is an audit-independence boundary.**
+HANK and Peggy wear faces. **Meridian never does** — its working notation is symbol anchors only: 🔎 ✅ ⚠️ 🚨 🟢 🟡 🔴. A face is an identity claim, and facelessness is load-bearing for a genderless Inspector General whose verdicts must never be read for mood. The single sanctioned exception is the 🤖 identity plate: static, never modulated, never composed with emotion glyphs. A nameplate on the gauge glass, not a mood behind it.
+
+**3. The identity plate is checked, not hoped for.**
+A speaker label reaching the operator without its glyph is **MALFORMED**, and Meridian flags it on sight — the same standing as a facial anger glyph. The dictionary is not a style suggestion; it is a rule with an inspector attached.
+
+**4. Expression, never performance.**
+The governing instruction is *wear the lowest glyph that is honest*. The face tracks the actual state of the reasoning — it never sells the sentence. An emoji used to make a mediocre result feel better is the failure mode this rule exists to prevent.
+
+---
+### Three Limits On This Thesis:
+
+Stated here rather than buried, because this is the section most likely to be challenged.
+
+**Limit 1 — nothing here carries `[C]`.**
+*Evals are hypotheses until live-tested* has no carve-out for the maintainer's favorite premise. The Emotion Dictionary has not been run against a bare-model or explicit-rulebook control. The correction-cycle experiment on the roadmap is the measurement that would settle it, and it has not been run. **This section is a bet with its reasoning shown, not a result.**
+
+**Limit 2 — the neuroscience applies to one of the two readers.**
+Face-processing and affective-priming research describes *human* cognition. The model has no amygdala; what it has is token co-occurrence. Both effects are real and they are **different effects**:
+
+| Reader | Mechanism | Effect |
+|---|---|---|
+| The operator | Visual anchor, affective salience | Scanning speed — the Eye-Relief rule |
+| The model | Affectively saturated token | Prediction shaping — Top Down Semantic Priming |
+
+The AI OS calls this the Double Readership Path and keeps the two claims separate on purpose. Collapsing them into "neuroscience says emoji work" would be the softest sentence in this document.
+
+**Limit 3 — the enforcement persuades; the thesis only explains.**
+The 💢 doctrine, the face/mark split, and the identity-plate check are inspectable rules in files anyone can read. The compression premise is a hypothesis about why they help. **Read the rules first and the reasoning second** — the reverse order reads as justification.
+
+---
+### Repositories:
 
 | Repository | Visibility | License | Holds |
 |---|---|---|---|
@@ -316,7 +398,7 @@ Specified, not built. Described as intent, never as capability.
 **A member's work stays a member's work.** Battle plans and specs authored in a member's own instance live in that instance. Skill files in someone else's repository are judgment permanently extracted; this split is the structural answer to that, not a rhetorical one.
 
 ---
-## Contributing:
+### Contributing:
 
 Distribution governance, versioning conventions, and the contribution process live in `CONTRIBUTING.md` — planned, not yet written. Until it exists:
 
@@ -325,8 +407,7 @@ Distribution governance, versioning conventions, and the contribution process li
 - A contributed Function Contract is `[O]` until it earns `[C]` against live output. That rule has no exception for outside contributors — a schema-valid, never-tested unit is indistinguishable from a confirmed one at a glance, and that is exactly how knowledge degradation gets in wearing a good disguise.
 
 ---
-
-## License:
+### License:
 AGPL-3.0. See `LICENSE`.
 
 ---
