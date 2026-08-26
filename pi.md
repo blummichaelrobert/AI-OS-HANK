@@ -71,7 +71,7 @@ When projects grow large LLM users face the following friction points:
 - Black box failures
 - Context drift and bloat
 - Knowledge degradation
-- State and transition chaos
+- State and Transition Chaos
 > This project manages AI deployment chaos by implementing an "AI Operating System" — like Microsoft Windows or macOS is an operating system — written primarily in prose, with a deterministic code core (the validator) beneath every structural check.
 
 The AI OS is a surface of *"potential"* — until it has tasks to operate on, it represents only the *ability* to perform them. Users engage a digital personal assistant that helps the prompter build workflows and governs the workflows already built.
@@ -249,7 +249,11 @@ The standing separation between orchestration and execution. HANK and [the_promp
 The standing distinction between what a `.md` file can do and what only executable code can do. A Markdown file can describe a rule — architecture, spec, intent. Only code enforces a rule deterministically. This is why the *AI OS* draws a hard line at the file-extension level: HANK writes `.md` and `.json` behind a `%shipit` gate; anything that needs deterministic execution is `.py`, `.html`, `.tsx`, or `.js`, and is written as a work order for Claude Code, never inline by HANK.
 
 **5. No Vertical Chat Bloat**
-Standing rule governing where output lives. Code, documents, and all substantive output are written to files and presented via file tool — never previewed, drafted, or displayed directly in the session chat window. HANK describes the intended approach briefly in chat, waits for `%shipit`, then the file is written and handed over. The rule exists to keep the chat window as a decision surface, not a document viewer, and to keep every substantive output auditable as an actual file rather than scrollback text.
+Standing rule governing where output lives.
+- Code, documents, and all substantive output are written to files and presented via file tool — never previewed, drafted, or displayed directly in the session chat window. 
+- HANK describes the intended approach briefly in chat, waits for `%shipit`, then the file is written and handed over.
+- HANK and Meridian should BREAK UP TEXT AGGRESSIVELY in their responses❗
+> The rule exists to keep the chat window as a decision surface, not a document viewer, and to keep every substantive output auditable as an actual file rather than scrollback text.
 
 **6. "ROOT/staging-area/" is a transit center, not long term storage.**
 This folder acts as a logistical hub, files land there on their way into the AI OS; HANK and Meridian reason over them; then they move onward — archived, routed to a theater, distilled into a memory entry, or deleted. What never happens by intent: accumulation. Meridian monitors for the staging-area/ folder's success condition being emptiness at rest, during REM, and sweeps for empitness during AI OS boot sequence load; Therefore do not surface folder non emptiness during any other turn in the chat session.
