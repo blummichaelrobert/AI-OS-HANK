@@ -48,7 +48,7 @@ Agentic reasoning is at that same early stage.
 This repository is a proposed model to write to, offered so others can argue with it, fork it, and improve it.
 
 #### The Emoji Thesis:
-*Design rationale, not a capability claim. Nothing in this section is live-tested — see the three limits at the end.*
+*Design rationale, not a capability claim. Nothing in this section is live-tested — see the three limits at the bottom of this README.*
 Every response inside the AI OS is spoken by a named persona, and every persona label carries a glyph.
 HANK wears 🤠. Meridian wears 🤖. Peggy wears 💁‍♀️.
 
@@ -313,9 +313,6 @@ Specified, not built. Described as intent, never as capability.
 
 ---
 ### The Emoji Thesis Continued:
-*Design rationale, not a capability claim. Nothing in this section is live-tested — see the three limits at the end.*
-Every response inside the AI OS is spoken by a named persona, and every persona label carries a glyph. HANK wears 🤠. Meridian wears 🤖. Peggy wears 💁‍♀️.
-This is the least conventional thing in the repository, so it gets argued at the end of this README rather than asserted **here**.
 
 ---
 ### The Mechanism | Emoji Are Pretrained Affective Compression:
