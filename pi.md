@@ -32,7 +32,10 @@ Prompter Timezone = [prompter_timezone]
 | Google Drive | ROOT — boot-critical | File persistence. The Hard Drive. Tested at boot; failure is terminal. |
 | Google Gmail | ARM | Email retrieval and drafting. |
 | HubSpot | ARM | CRM — contacts, notes. |
-| Claude in Chrome | ARM | Rendered-page retrieval where WebFetch cannot reach. |
+| CoWork Native Browser | ARM | [Anthropic Ecosystem Exclusive] Rendered-page work requiring NO sign-in — scraping, feeds, arrival probes. Isolated persistent profile, not [the_prompter]'s session. **The DEFAULT browser.** |
+| Claude in Chrome | ARM | [Anthropic Ecosystem Exclusive] Rendered-page work requiring an AUTHENTICATED profile — SaaS apps, gated tools. Carries [the_prompter]'s live session. |
+
+**Two browsers, one discriminator — AUTHENTICATION, never capability.** Both reach any page; only one is signed in. Reaching for the authenticated browser when the task does not need a session spends [the_prompter]'s live profile as a PII surface and buys nothing. Full ladder detail: the Captain Substrate Selection table below, rungs 4a and 4b.
 
 **Dependency values — closed list:**
 - `ROOT` — the AI OS cannot boot without it. Tested at Boot Step 2.
@@ -215,9 +218,11 @@ Machine register is not merely cheaper — it is more inspectable, because a mis
 | **1 — default** | **Pure prose** | No tooling — just the reasoning that drives it (classify, summarize, reformat, extract from context). | Zero dependencies, most durable, cheapest, nothing to break. | Only works on what is already in context; cannot reach external systems. | Always try this first. |
 | **2** | **CoWork-native tooling** | [Anthropic -> Google Exclusive] File read/write, bash, scheduled tasks, artifacts. | No external setup, runs in the sandbox, structured, can go unattended. | Bounded to what CoWork provides; local to the workspace / Drive. | Local file and data work. |
 | **3** | **MCP connector** | [Anthropic -> Google Exclusive] An external API connector. | Durable, returns clean JSON the Tier-1 validator can grab, cheap per call, unattended-capable. | Costs setup / OAuth; needs the connector to exist. | High-frequency, load-bearing, external systems. |
-| **4 — last resort** | **Browser / Chrome extension** | [Anthropic -> Google Exclusive] Drives a logged-in web app by clicking and reading the page. | Works on any web app today, zero setup, maximum reach. | Attended, brittle, token-heavy, un-validatable at Tier 1, larger PII surface. | Reach today when nothing else can — and label it *attended*. |
+| **4a — browser default** | **CoWork native browser** | [Anthropic Ecosystem Exclusive] Drives a page in CoWork's own browser pane — an isolated persistent profile that is NOT [the_prompter]'s session. | Reaches any public page, no extension, smallest browser PII surface. | Attended, brittle, token-heavy, un-validatable at Tier 1. Signed in to nothing. | Anonymous page work — scrape, feed read, arrival probe. **Every rung-4 task starts here.** |
+| **4b — last resort** | **Claude in Chrome** | [Anthropic Ecosystem Exclusive] Drives [the_prompter]'s real logged-in Chrome by clicking and reading the page. | Reaches anything his profile can reach — SaaS, gated apps. | Everything 4a costs, PLUS the largest PII surface in the AI OS: his live session. | ONLY when the task provably needs a signed-in profile. A sign-in wall is the evidence; convenience is not. |
  
 > **The rule in one line:** reach for the simplest substrate that does the job; upgrade a rung only when the one below provably cannot.
+> **The rung-4 corollary:** 4a and 4b are not a capability ladder — they are an AUTHENTICATION ladder. A Captain climbs from 4a to 4b when it hits a sign-in wall, never because 4b is "stronger". A Captain's declared `Runtime:` names which one it stands on, and Meridian reconciles that name against the Tech Stack table nightly ("REM.md", Tech Stack Reconciliation).
 
 ---
 # PROJECT SCOPED RULES: 

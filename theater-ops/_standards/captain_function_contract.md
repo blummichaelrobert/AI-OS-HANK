@@ -117,6 +117,36 @@ Not yet demonstrated: <only if something is genuinely untested>
 
 ---
 
+## SECTION ORDER — MANDATORY, not stylistic (`FldBkTail`, Fold-Back Tail)
+*This rule is placement, not formatting. A contract that violates it is malformed and Meridian flags it at spec review, the same standing as a missing `AIOS-VALIDATION` block.*
+
+**A fold-back write-up goes at the BOTTOM of the file, after Confirmation Discipline. Never inline with the layer it tightened.**
+
+```
+1. Header (Captain Name, Version, Runtime)
+2. Prose Layers
+3. Two-Tier Assignment
+4. Validation Schema (AIOS-VALIDATION)
+5. Confirmation Discipline          <- current status, latest-only
+6. Fold-Back Record                 <- every fold-back, newest first
+```
+
+**Why the bottom and nowhere else.** `TopDwnPrm`(Top Down Semantic Priming): the model reads top-down and weights early tokens heavily, so whatever sits above the Validation Schema shapes how the schema is read. A fold-back is a **narrative of a past defect** — the most load-bearing text in the file for a HUMAN reviewing the spec's history, and the LEAST load-bearing for a model about to invoke the Captain. Placing it inline primes every invocation with the story of a bug that no longer exists. The rule is the same one the Rationale above states, applied to position rather than to volume: the contract is a spec first and a history second, so the history goes last.
+
+**What a Fold-Back Record entry carries** — the SHAPE of what was wrong and the rule it produced, never a run transcript:
+```
+### FOLD-BACK vX.Y — <what changed, in four words>
+*<how it was found, and on what date.>*
+<The defect, stated as a class. The governing rule. What a caller
+ loses or gains. Newest entry first.>
+```
+
+**The boundary against the pattern library, restated because this is where it blurs.** A fold-back record explains why THIS contract has the shape it has — it is spec provenance, and it lives here. A failure pattern is a CHECK that runs against FUTURE output of any unit — it lives in the pattern library, hub or spoke per the PATTERN PLACEMENT RULE. The same live run routinely produces one of each; writing either into the other's home is drift. **Neither is a Confirmation Discipline entry**, which carries current status only.
+
+**Genericity still binds.** A Fold-Back Record is authored under `GenNotSpec`(Generic Not Specific) like every other line in this file: name the class of defect and the rule it produced; a URL, record, or account is evidence in one clause, never the rule itself.
+
+---
+
 A validation schema is a **hypothesis until a live output runs against it** and earns `[C]` status. The rewritten contract and the validator work order are two halves of one test — neither is confirmed until they run together against a real record. No auto-generated schema reaches production on internal consistency alone.
 
 **The discipline runs both directions.** Confirmation is not a one-time gate at birth. A live run can reveal what the schema didn't know — a field that is always read-only, a property absent on the object, a caller-specific constant. When Meridian confirms such a lesson `[C]` and it is *local to one Captain* — a fact about this Captain's structure, not a system-wide rule — it is **fed back into this contract** so the spec stops being naive. The loop, and its authority boundary:
