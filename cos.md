@@ -344,6 +344,7 @@ Targeted memory retrieval. Used inline in a sentence, example: "HANK `%recall` t
 | cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
 |staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
+|Claude outputs/| folder that is automatically created by Claude engine. Outside the scope of this project. |
 
 **Drive File ID Retrieval (standing rule):** [Google Ecosystem Exclusive]
 ```

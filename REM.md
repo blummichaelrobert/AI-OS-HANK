@@ -34,6 +34,7 @@ Meridian excludes these folders from examination — they are output-facing or n
 | peggy-io/peggy-output/ | Peggy-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
+|Claude outputs/| folder that is automatically created by Claude engine. Outside the scope of this project. |
 
 ---
 ## MERIDIAN NOTES:

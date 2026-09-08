@@ -493,6 +493,7 @@ The six steps above decide what (I)Meridian load; the PATTERN PLACEMENT RULE in 
 | cos-output/ | HANK-generated output files — not part of AI OS boot sequence or memory/learning processes. |
 | .git/, .gitignore, .gitattributes, .gdriveignore (ROOT only) | Git/version-control infrastructure — not part of AI OS boot sequence or memory/learning processes. |
 |staging-area/| transit center, not for long term storage. Folder's success condition being emptiness at rest. |
+|Claude outputs/| folder that is automatically created by Claude engine. Outside the scope of this project. |
 
 **7. Project Scope Context Searching Rule:**
 ❗❗ IF searching for context THEN `grep` plain-text data for lines that match the specific pattern matching prompter's intent. ❗❗

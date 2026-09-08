@@ -1,7 +1,9 @@
 .DS_Store
-# manifest.md
-# cos-output/
-# peggy-io/peggy-output
-# staging-area/
+manifest.md
+archive/
+cos-output/
+Claude outputs/
+peggy-io/peggy-output
+staging-area/
 __pycache__/
 _code-tools/_python-tools/__pycache__/
