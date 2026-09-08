@@ -133,7 +133,7 @@ A Colonel may not consume Captain output until the verdict is `pass`. **Omitting
   "gates_fired": 6,
   "reconciled": true,
   "entries": [
-    {"captain": "hubspot_contact_search", "invoked_by": "enrich_hubspot_contact",
+    {"captain": "hubspot_contact_search", "invoked_by": "enrich_hubspot_contact_colonel",
      "verdict": "pass", "deltas": []}
   ]
 }

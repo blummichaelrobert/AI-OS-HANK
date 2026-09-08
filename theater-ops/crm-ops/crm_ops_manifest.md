@@ -17,7 +17,7 @@
 | "ROOT/validator.py" | Tier 1 deterministic validator (Validation Schema checker). |
 | "ROOT/affirmative_detection.md" | Affirmative Detection — where each unit below ticks at its gate. |
 
-**Unit specs catalogued in this file:** `enrich_hubspot_contact.md` (Colonel) · `hubspot_contact_lookup.md` · `hubspot_contact_create.md` · `hubspot_contact_update.md` · `hubspot_contact_search.md` · `hubspot_contact_note_create.md` — all resident in this folder, "ROOT/theater-ops/crm-ops/".
+**Unit specs catalogued in this file:** `enrich_hubspot_contact_colonel.md` (Colonel) · `hubspot_contact_lookup.md` · `hubspot_contact_create.md` · `hubspot_contact_update.md` · `hubspot_contact_search.md` · `hubspot_contact_note_create.md` — all resident in this folder, "ROOT/theater-ops/crm-ops/".
 
 ---
 
@@ -44,7 +44,7 @@
 
 | Colonel | Mission (standing charge) | Output | Status |
 |---|---|---|---|
-| `enrich_hubspot_contact` | Pull a batch of never-attempted HubSpot contacts, scour the open web for the priority four (`company`, `jobtitle`, `hs_linkedin_url`, `website`), write only source-confirmed values, and close every contact with a terminal `ai_os_enrichment_status` so no contact is ever researched twice | Enrichment report — per-contact terminal verdict + per-field accounting with `source_url` on every written value | [O] at v1.3 — two live runs. Run 2 passed all six Tier 1 gates with zero deltas and still wrote three false values (rank-4 aggregator outranked the contact's own email domain); Meridian retracted Tier 2 pass. `[C]` denied — structural cleanliness is not evidence of truth. v1.3 adds a mandatory ranked Source Hierarchy; awaiting a run whose values survive [the_prompter]'s inspection |
+| `enrich_hubspot_contact_colonel` | Pull a batch of never-attempted HubSpot contacts, scour the open web for the priority four (`company`, `jobtitle`, `hs_linkedin_url`, `website`), write only source-confirmed values, and close every contact with a terminal `ai_os_enrichment_status` so no contact is ever researched twice | Enrichment report — per-contact terminal verdict + per-field accounting with `source_url` on every written value | [O] at v1.3 — two live runs. Run 2 passed all six Tier 1 gates with zero deltas and still wrote three false values (rank-4 aggregator outranked the contact's own email domain); Meridian retracted Tier 2 pass. `[C]` denied — structural cleanliness is not evidence of truth. v1.3 adds a mandatory ranked Source Hierarchy; awaiting a run whose values survive [the_prompter]'s inspection |
 
 ---
 
