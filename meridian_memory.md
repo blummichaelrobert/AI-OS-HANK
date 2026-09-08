@@ -11,6 +11,8 @@ Prompter Timezone = [prompter_timezone]
 | "ROOT/REM.md" | Nightly %REM sweep instructions |
 | "ROOT/theater-ops/_shared-captain-library/shared_meridian_memory.md" | Shared Captain SPOKE |
 | "ROOT/theater-ops/crm-ops/crm_ops_meridian_memory.md" | Client Resource Management SPOKE |
+| "ROOT/theater-ops/crm-ops/visual_production_ops_meridian_memory.md" | Visual Image Production SPOKE |
+| "ROOT/theater-ops/crm-ops/web_research_ops_meridian_memory.md" | Web tools, i.e. Browser Scraping SPOKE |
 
 ---
 # SYNTAX KEY
@@ -123,12 +125,44 @@ Single-line entry format:
 | STATUS | [O] = active, check every run. [F] = resolved, retained for audit. [C] = confirmed live. |
 
 ---
-# RESOLVED STATUS RULES
-**PATTERN LIBRARY:** An entry stays only while it is a CHECK — something that runs against future output. Resolved failure patterns stay for exactly that reason, in the hub and in every spoke. CONFIRMATION RECORDS DO NOT BELONG HERE AT ALL: a unit's current status lives in its own `## Confirmation Discipline` section, and no history is kept anywhere.
-**CURRENT OPEN FINDINGS:** Resolved items are DELETED from active sections. No archive copy is retained — the correction lives in the file where it was made. Active sections must be empty when nothing is open.
-**PENDING RESOLUTION:** Temporary holding state between (my)Meridian flag and (the prompter)[the_prompter] resolution. Entries are deleted on resolution. Empty when the system is healthy.
+# NEW MEMORY SPOKE FILE FORMAT:
+*Use visual_production_ops_meridian_memory.md as an example.*
 
-**NO-EPITAPH CLAUSE — the `%REM SWEEP LOG` is TRANSIENT.** On [the_prompter]'s directive, after (I)Meridian violated the rule above in the sweep of that same date.
+```
+# CONFIG
+Standard CONFIG section used throughout the AI OS.
+
+# FILE LOCATION REFERENCE
+Standard File Location Reference used throughout the AI OS.
+
+# SYNTAX KEY
+Standard Syntax Key used throughout the AI OS.
+
+# <arm-name> - Meridian Pattern Memory (Spoke)
+Rules releated to being a spoke in Meridian's memory.
+
+# SCHEMA
+Standard Schema tags used throughout the AI OS.
+
+# PATTERN LIBRARY - <arm-name-all-caps>
+An entry stays only while it is a CHECK — something that runs against future output. Resolved failure patterns stay for exactly that reason, in the hub and in every spoke. CONFIRMATION RECORDS DO NOT BELONG HERE AT ALL: a unit's current status lives in its own `## Confirmation Discipline` section, and no history is kept anywhere.
+
+# CONFIRMATION RUN - Live Tested:
+Single date of when spoke Colonel latest earning of [C] status.
+
+## LIVE TESTED OPERATIONAL THEATER MEMORIES
+NOT CONFIRMATION PATTERNS, those exist in the Colonels and Captains themselves!
+
+## CURRENT OPEN FINDINGS
+Resolved items are DELETED from active sections. No archive copy is retained — the correction lives in the file where it was made. Active sections must be empty when nothing is open.
+
+## PENDING RESOLUTION
+Temporary holding state between (my)Meridian flag and (the prompter)[the_prompter] resolution. Entries are deleted on resolution. Empty when the system is healthy.
+```
+
+---
+## NO-EPITAPH CLAUSE
+The `%REM SWEEP LOG` is TRANSIENT.** On [the_prompter]'s directive, after (I)Meridian violated the rule above in the sweep of that same date.
 ```
 1. DELETE means delete. When a finding is resolved, the entry is REMOVED —
    not struck through, not italicized, not replaced with a "RESOLVED on
@@ -172,10 +206,10 @@ SlfInsp | Meridian %REM | System-wide | 2026-06-16 | After the cos_memory.md swe
 DsgPhFam | System-wide | System-wide | 2026-06-27 | Design Philosophy Family codified: KISS + "Elegance is in simplicity" + Frequency Principle. All three are standing QA anchors. Proposed builds that fail any anchor surface to HANK before execution. | cos_memory: DsgPhFam | [F]
 
 ---
-## QA Patterns
+## QA PATTERNS:
 
 ---
-## Confirmed Patterns — Live Tested
+## LIVE TESTED THEATHER MEMORIES:
 
 WbFtchBin | Platform/tool-level | ad-hoc %compose | 2026-08-08 | CoWork's native WebFetch returns literal "[binary data]" for any non-text/html content-type, discarding the response body — confirmed against uschamber.com/co/feeds/rss (application/rss+xml), which is valid UTF-8 XML, not gzip, not actually binary. The limitation is WebFetch's content-type handling, not the source content. Any future Captain relying on WebFetch for non-HTML content (JSON APIs, XML, plain text feeds) should expect this failure mode. | Live test, mcp__workspace__web_fetch called twice against the same URL | [C]
 

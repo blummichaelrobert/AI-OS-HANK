@@ -45,14 +45,6 @@ Prompter Timezone = [prompter_timezone]
 **Placement.** Entries arrive here by rule 2 of the PATTERN PLACEMENT RULE in the hub. A pattern that names no unit, names a Command Triad persona, or states a system-wide law belongs in the hub — not here. **A pattern naming a SHARED Captain belongs in "shared_meridian_memory.md", not in this file**, even when this arm's Colonel was commanding it when the finding surfaced: the pattern follows the unit's spec folder, never the caller. One entry, one home.
 
 ---
-## CONFIRMATION RUN — Live Tested:
-
-**`browser_scrape_colonel` DID earn `[C]` on 2026-09-06.**
-
----
-## PATTERN LIBRARY — WEB RESEARCH OPS
-*Every entry is a rule that runs against future Colonel and Captain output, written on a halt and kept for as long as it can still catch something — never a record of what a past run did. A unit's confirmation is current status in that unit's own spec, and no history is kept anywhere.*
-
 ### SCHEMA
 *Identical to the hub. One schema, one library, four files.*
 
@@ -62,6 +54,23 @@ Single-line entry format:
 Field glossary and RESOLVED STATUS RULES: → "ROOT/meridian_memory.md". Not duplicated here — one definition, one home.
 
 ---
-## CURRENT OPEN FINDINGS
+## PATTERN LIBRARY — WEB RESEARCH OPS
+*Every entry is a rule that runs against future Colonel and Captain output, written on a halt and kept for as long as it can still catch something — never a record of what a past run did. A unit's confirmation is current status in that unit's own spec, and no history is kept anywhere.*
 
+---
+## CONFIRMATION RUN — Live Tested:
+
+**`browser_scrape_colonel` DID earn `[C]` on 2026-09-06.**
+
+---
+## LIVE TESTED OPERATIONAL THEATER MEMORIES:
 *(none)*
+
+---
+## CURRENT OPEN FINDINGS
+*(none)*
+
+---
+## PENDING RESOLUTION
+*(none)*
+

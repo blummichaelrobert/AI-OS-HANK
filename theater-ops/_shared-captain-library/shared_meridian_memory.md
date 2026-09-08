@@ -58,7 +58,7 @@ Field glossary and RESOLVED STATUS RULES: → "ROOT/meridian_memory.md". Not dup
 # PATTERN LIBRARY — SHARED CAPTAIN LIBRARY
 *Every entry is a rule that runs against future Colonel and Captain output, written on a halt and kept for as long as it can still catch something, never a record of what a past run did — a unit's confirmation is current status in that unit's own spec, and no history is kept anywhere.*
 
-## Confirmed Patterns — Live Tested
+## LIVE TESTED OPERATIONAL THEATER MEMORIES
 
 ISODt | rss_reader Captain | Content Intel | 2026-06-11 | smestrategy.net RSS feed returns dates in clean ISO 8601 format. Colonel Content Intel can depend on clean ISO 8601 dates from this feed without normalization. | Live test DW010 | [C]
 
@@ -71,3 +71,9 @@ WfThinPass | web_fetch Captain | ad-hoc %compose | 2026-09-05 | `fetched: true` 
 WeNoOpin | web_export Captain | ad-hoc %compose | 2026-09-06 | This Captain forms NO OPINION about what it writes — a payload it might be thought to "consider wrong" is serialized exactly as given, because judging the payload happened upstream. Every required output field is an echoed input, a pinned constant, a computed length, or the name the runtime actually wrote, so there is nothing observed for reality to contradict and nothing for the unit to have judged badly. THE CONSEQUENCE FOR A COMMANDING COLONEL: **an unwanted export is ALWAYS a Colonel defect, never a Captain failure** — do not read `exported: true` as evidence the export was warranted, and do not look for a Captain-side check that would have caught it, because none exists or can. Whether this payload should have been written, in this format, under this name, is Tier 2 and lives entirely with the caller. → core: CntnNotPrm | Live test, 11 reconciled gates across three formats | [C]
 
 ExtNoWork | web_parse / web_fetch Captains | browser_scrape_colonel | 2026-09-06 | **Selection in this chain happens at FETCH, via `extraction_scope` — not at a parse map.** Confirmed live end-to-end across two URLs: the only choice that changed what the mission received was which scope the page was retrieved at, and the commanding Colonel reached past any hypothetical Extract stage directly to `structure_map.blocks[]` on both runs. THE CONSEQUENCE FOR A COMMANDING COLONEL: an Extract Captain has **no demonstrated work** in this chain, and building one now would add a unit whose only job is to search blocks the Colonel already reads — `SRP`(Single Responsibility) says a unit with no decision of its own is not a unit. Build it only when a mission needs a NAMED value that no scope choice can deliver, and when it can return `candidates[]` with `match_count` and refuse to choose. Until then the honest chain is Fetch -> Parse -> Export. → core: SuffNotVol | Live end-to-end run, 2 URLs, 7 reconciled gates | [C]
+
+---
+## CURRENT OPEN FINDINGS
+
+---
+## PENDING RESOLUTION

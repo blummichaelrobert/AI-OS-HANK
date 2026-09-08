@@ -57,8 +57,20 @@ Field glossary and RESOLVED STATUS RULES: → "ROOT/meridian_memory.md". Not dup
 # PATTERN LIBRARY — CRM OPS
 *Every entry is a rule that runs against future Colonel and Captain output, written on a halt and kept for as long as it can still catch something, never a record of what a past run did — a unit's confirmation is current status in that unit's own spec, and no history is kept anywhere.*
 
-## Confirmed Patterns — Live Tested
+## CONFIRMATION RUN — Live Tested:
+*(none)*
+
+---
+## LIVE TESTED OPERATIONAL THEATER MEMORIES:
 
 HsCrt | hubspot_contact_create Captain | Outbound Sales | 2026-06-11 | Two-call pattern is structural: Step 1 = contact CREATE, Step 2 = note CREATE (conditional on Step 1 success + note_body present). `targetObjectType: "contacts"` is case-sensitive and MCP-specific. `notes_last_contacted` is read-only — cannot be set on CREATE. `description` property does not exist on contacts in this HubSpot instance. | Live test `%compose` colonel | [C]
 
 HsUpdEnum | hubspot_contact_update Captain | CRM Ops | 2026-08-12 | v1.1 Pipeline-State Exception confirmed — `ai_os_enrichment_status` (enumeration) written as `Processed`, independently re-read via get_crm_objects, value stored verbatim and correctly cased; validator.py verdict `pass`, zero deltas. Update response again returned empty `properties: {}` — known pattern, do not read it as failure, always re-read independently. [C] was RETAINED not revoked across this edit: the Validation Schema was unchanged (no output field added or retyped), and Tier 1 never checked inputs in the first place — so the confirmed artifact stayed confirmed and only the new input path needed earning. Standing risk this Captain now carries: case is load-bearing (`Processed`/`Skipped`/`Error`) and un-checkable at Tier 1 — a mis-cased value passes the validator, is rejected portal-side, and surfaces as `error`, which a Colonel conflating "tool failed" with tri-state `Error` would retry forever. Colonel-layer Rule of Engagement required: transient failure and terminal not-found must be distinguished BEFORE the status write, never inferred from it. | Live test, validator.py run against hubspot_contact_update.md | [C]
+
+---
+## CURRENT OPEN FINDINGS
+*(none)*
+
+---
+## PENDING RESOLUTION
+*(none)*

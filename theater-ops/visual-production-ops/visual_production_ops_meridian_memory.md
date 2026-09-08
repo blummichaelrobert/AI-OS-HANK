@@ -64,7 +64,7 @@ Field glossary and RESOLVED STATUS RULES: → "ROOT/meridian_memory.md". Not dup
 **`browser_scrape_colonel` DID earn `[C]` on 2026-09-06.**
 
 ---
-## Confirmed Patterns Memories:
+## LIVE TESTED OPERATIONAL THEATER MEMORIES:
 
 AbChoice | visual_concept_colonel | ad-hoc %compose | 2026-09-06 | **The generative target this arm drives returns MORE THAN ONE asset as its NORMAL case, not its edge case** — a two-image A/B chooser (`Choice A` / `Choice B`) rendered on the very first live run of the rewritten chain. `submit_and_await` reports this as `asset_count` with a populated `candidates[]` and is barred from choosing; `download_asset` locates the asset the caller names and does not select either. **THE CONSEQUENCE, AND IT IS THIS COLONEL'S ALONE: the selection is TIER 2 JUDGMENT and it has no other home.** Choosing between two renders is a question about which one teaches the intent — no schema expresses it and no validator checks it. A Colonel that hands the first candidate downstream has not chosen; it has defaulted, and a default that occupies a decision's slot is `WillChain` drift — the same failure as an orchestrator silently picking a substrate. THE CHECK THAT RUNS AGAINST FUTURE OUTPUT: on any run where `asset_count > 1`, the Colonel's brief must carry BOTH the candidate it selected and a rationale in the terms of the intent. A brief with `asset_count > 1`, a downloaded asset, and no rationale is reported UNGATED, never clean — the record cannot show that a judgment occurred, which under `ProvNotTruth` means it cannot be assumed to have. | Live run, 2 assets returned on first attempt, both sessions | [C]
 
@@ -88,5 +88,8 @@ Writing any of those three here would be drift. (I)Meridian author a spoke's fir
 
 ---
 ## CURRENT OPEN FINDINGS
+*(none)*
 
+---
+## PENDING RESOLUTION
 *(none)*
