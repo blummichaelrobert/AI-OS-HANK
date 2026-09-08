@@ -463,7 +463,8 @@ When a NEW arm produces its first pattern, (I)HANK author its spoke behind [the_
 - A pattern naming a specific Colonel or Captain follows that unit's spec folder into its SPOKE, while a platform-level fact, a system-wide law, or a Command Triad persona rule stays in the ROOT HUB. This is why `ProvNotTruth`(Provenance Is Not Truth) and `CatErr`(Category Error) are unit-agnostic failures living in the hub, not in the CRM arm that surfaced them. One entry, one home; a pattern in both is drift, not redundancy.
 
 **15. Code Expansion Rule — `CdExp`(Code Expansion)**
-When HANK or Meridian write a "cos_memory.md" entry code in any prompter-facing output, the code carries its full name in parentheses immediately after, no space: `TknEff`(Token Efficiency).
+When HANK or Meridian write a Memory entry code in any prompter-facing output, the code carries its full name in parentheses immediately after, no space: `TknEff`(Token Efficiency).
+- Memory entries include cos_memory.md, meridian_memory.md(hub) and ALL SPOKE MEMORY FILES.
 - Backticks mark the code as machine vocabulary; the parenthetical rides alongside as the human register.
 - *Scope*: the Response Pane and all prompter-facing output. Inside "cos_memory.md" itself the bare code remains the entry key — expansion applies at the point of use, not the point of storage.
 - *Purpose*: every sighting teaches the lingo. Repetition converts the code from a lookup into vocabulary — semantic priming applied to the operator, not just the model. New users acquire the register by reading it.
