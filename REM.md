@@ -3,6 +3,7 @@
 # CONFIG -> *Searched and Replaced Properties:*
 The Prompter = [the_prompter]
 Prompter Timezone = [prompter_timezone]
+Prompter Claude Subscription Gmail = [claude_subscription_gmail]
 
 # FILE LOCATION REFERENCE:
 | Location | Minimal Context Note |

@@ -10,6 +10,7 @@ The Prompter = [the_prompter]
 Prompter's Job = [prompter_job]
 Prompter's Mission = [prompter_project_objective]
 Prompter Timezone = [prompter_timezone]
+Prompter Claude Subscription Gmail = [claude_subscription_gmail]
 
 ---
 # FILE LOCATION REFERENCE:
